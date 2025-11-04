@@ -12,7 +12,7 @@ Guayaquil en Bici es un grupo sin fines de lucro, que principalmente se financia
 -   Visita nuestro [wishlist](http://www.amazon.com/wishlist/16166JR5D8ZV "Wishlist") y sorpréndenos.
 -   Haciendo una donación
     
-      ![](https://www.paypal.com/es_XC/i/scr/pixel.gif)
+      
     
 
 Todos los recursos obtenidos a través de nuestra página y la de nuestros auspiciados, sea por publicidad o donaciones, serán destinados exclusivamente para la adquisición o mantenimiento de bienes y/o servicios relacionados directamente con nuestra actividad y/o la de nuestros auspiciados. Como muestra de transparencia en el manejo de estos recursos, nos comprometemos a publicar dentro de los primeros 5 días de cada mes los respectivos reportes de ingresos por publicidad. Las donaciones serán publicadas inmediatamente incluyendo el monto y el nombre del aportante;  no aceptamos donaciones anónimas. Desde ya, muchas gracias por tu apoyo.

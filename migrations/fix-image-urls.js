@@ -11,37 +11,62 @@ const __dirname = dirname(__filename);
 
 const blogDir = join(__dirname, '../src/content/blog');
 
-// Pattern to match absolute URLs
-const absoluteUrlPattern = /http:\/\/guayaquilenbici\.org\/wp-content\/uploads\//g;
-const replacement = '/uploads/wp-content/uploads/';
+// Patterns to match absolute URLs
+const patterns = [
+  {
+    pattern: /http:\/\/guayaquilenbici\.org\/wp-content\/uploads\//g,
+    replacement: '/uploads/wp-content/uploads/'
+  },
+  {
+    // Remove external image references completely (they don't exist locally)
+    pattern: /!\[([^\]]*)\]\(https?:\/\/(?!guayaquilenbici\.org)[^\)]+\)(\s*"[^"]*")?/g,
+    replacement: '' // Remove the entire markdown image
+  }
+];
 
 let fixedCount = 0;
 let fileCount = 0;
 
-// Get all markdown files
-const files = readdirSync(blogDir).filter(f => f.endsWith('.md'));
+// Scan both blog and pages directories
+const directories = [
+  { path: join(__dirname, '../src/content/blog'), name: 'blog' },
+  { path: join(__dirname, '../src/content/pages'), name: 'pages' }
+];
 
-console.log(`Scanning ${files.length} blog posts...`);
+directories.forEach(dir => {
+  const files = readdirSync(dir.path).filter(f => f.endsWith('.md'));
+  console.log(`\nScanning ${files.length} ${dir.name} files...`);
 
-files.forEach(file => {
-  const filePath = join(blogDir, file);
-  let content = readFileSync(filePath, 'utf-8');
+  files.forEach(file => {
+    const filePath = join(dir.path, file);
+    let content = readFileSync(filePath, 'utf-8');
+    let modified = false;
+    let totalFixed = 0;
 
-  // Check if file contains absolute URLs
-  if (content.includes('http://guayaquilenbici.org/wp-content/uploads/')) {
-    const matches = content.match(absoluteUrlPattern);
-    const count = matches ? matches.length : 0;
+    // Apply all patterns
+    patterns.forEach(({ pattern, replacement }) => {
+      const before = content;
+      content = content.replace(pattern, replacement);
+      if (content !== before) {
+        const matches = before.match(pattern);
+        const count = matches ? matches.length : 0;
+        totalFixed += count;
+        modified = true;
+      }
+    });
 
-    // Replace absolute URLs with relative paths
-    const newContent = content.replace(absoluteUrlPattern, replacement);
+    if (modified) {
+      // Clean up any double newlines created by removing images
+      content = content.replace(/\n\n\n+/g, '\n\n');
 
-    // Write back to file
-    writeFileSync(filePath, newContent, 'utf-8');
+      // Write back to file
+      writeFileSync(filePath, content, 'utf-8');
 
-    console.log(`✓ Fixed ${count} URL(s) in: ${file}`);
-    fixedCount += count;
-    fileCount++;
-  }
+      console.log(`✓ Fixed ${totalFixed} URL(s) in: ${file}`);
+      fixedCount += totalFixed;
+      fileCount++;
+    }
+  });
 });
 
 console.log(`\n✅ Fixed ${fixedCount} absolute URLs in ${fileCount} files`);
