@@ -1,0 +1,72 @@
+---
+import Layout from "@layouts/Layout.astro"
+import InnerHero from "@components/sections/InnerHero.astro"
+import ContactoForm from "@components/forms/ContactoForm.astro"
+import { siteConfig } from '@data/config';
+import { Mail, MapPin, Facebook, Instagram } from 'lucide-astro';
+
+const heroContent = {
+    title: "Contáctanos",
+    description: "¿Tienes preguntas o sugerencias? Escríbenos y te responderemos pronto"
+}
+---
+
+<Layout title="Contáctanos | Guayaquil en Bici" description="Ponte en contacto con Guayaquil en Bici">
+    <InnerHero content={heroContent} />
+
+    <section class="py-16 bg-base-100">
+        <div class="site-container px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Información de Contacto</h2>
+                    <p class="text-lg mb-6">
+                        Somos un colectivo ciudadano dedicado a promover el uso de la bicicleta
+                        como medio de transporte sostenible en Guayaquil.
+                    </p>
+                    <p class="text-lg mb-8">
+                        Contáctanos por correo electrónico o síguenos en nuestras redes sociales.
+                    </p>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3">
+                            <Mail aria-hidden="true" size={24} class="text-primary" />
+                            <a href={`mailto:${siteConfig.Socials.Email}`} class="text-lg hover:text-primary">
+                                {siteConfig.Socials.Email}
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <MapPin aria-hidden="true" size={24} class="text-primary" />
+                            <span class="text-lg">{siteConfig.Socials.Location}</span>
+                        </div>
+
+                        {siteConfig.Socials.Facebook && (
+                            <div class="flex items-center gap-3">
+                                <Facebook aria-hidden="true" size={24} class="text-primary" />
+                                <a href={siteConfig.Socials.Facebook} target="_blank" rel="noopener noreferrer" class="text-lg hover:text-primary">
+                                    Facebook
+                                </a>
+                            </div>
+                        )}
+
+                        {siteConfig.Socials.Instagram && (
+                            <div class="flex items-center gap-3">
+                                <Instagram aria-hidden="true" size={24} class="text-primary" />
+                                <a href={siteConfig.Socials.Instagram} target="_blank" rel="noopener noreferrer" class="text-lg hover:text-primary">
+                                    Instagram
+                                </a>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Envíanos un Mensaje</h2>
+                    <ContactoForm />
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

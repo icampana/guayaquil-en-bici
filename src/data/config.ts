@@ -1,21 +1,20 @@
 export const siteConfig = {
-  companyName: 'Titan Core',
-  siteUrl: 'https://titan-core.com',
+  companyName: 'Guayaquil en Bici',
+  siteUrl: 'https://guayaquilenbici.org',
   Socials: {
-      xSocial: 'https://x.com/astrodotbuild',
-      Github: 'https://github.com/withastro',
-      Instagram: 'https://www.instagram.com/astrodotbuild',
-      LinkedIn: 'https://www.linkedin.com/company/astrodotbuild',
-      Email: 'support@titan-core.com',
-      Phone: '+123 456 7890',
-      Location: '123 Main St, Anytown, USA',
+      xSocial: 'https://twitter.com/guayaquilenbici',
+      Facebook: 'https://www.facebook.com/guayaquilenbici',
+      Instagram: 'https://www.instagram.com/guayaquilenbici',
+      Email: 'info@guayaquilenbici.org',
+      Phone: '',
+      Location: 'Guayaquil, Ecuador',
   }
 };
 
 export const SEO = {
   Separator: '|',
-  SiteName: 'Titan Core',
-  defaultDescription: 'A modern, high-performance Astro JS theme',
+  SiteName: 'Guayaquil en Bici',
+  defaultDescription: 'Colectivo ciudadano que promueve el uso de la bicicleta como medio de transporte sostenible en Guayaquil',
 };
   
 export const blogSetting = {

@@ -1,0 +1,110 @@
+---
+import Button from "@components/ui/Button.astro";
+import Input from "@components/ui/form/Input.astro";
+import Textarea from "@components/ui/form/Textarea.astro";
+
+const formBackground = 'light';
+---
+<form
+    name="contacto"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    class="space-y-6 bg-white p-6 rounded-lg"
+>
+    <!-- Netlify form detection -->
+    <input type="hidden" name="form-name" value="contacto" />
+
+    <!-- Honeypot field for spam protection -->
+    <p class="hidden">
+        <label>
+            No llene este campo si es humano: <input name="bot-field" />
+        </label>
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Input
+            label="Nombre"
+            id="nombre"
+            name="nombre"
+            required
+            background={formBackground}
+            placeholder="Tu nombre completo"
+        />
+        <Input
+            label="Correo Electrónico"
+            type="email"
+            id="email"
+            name="email"
+            required
+            background={formBackground}
+            placeholder="tu@email.com"
+        />
+    </div>
+
+    <Input
+        label="Asunto"
+        id="asunto"
+        name="asunto"
+        required
+        background={formBackground}
+        placeholder="¿Sobre qué quieres escribirnos?"
+    />
+
+    <Textarea
+        label="Mensaje"
+        id="mensaje"
+        name="mensaje"
+        required
+        background={formBackground}
+        placeholder="Cuéntanos más sobre tu consulta o comentario..."
+        rows={6}
+    />
+
+    <div class="mt-6">
+        <Button type="submit">Enviar Mensaje</Button>
+    </div>
+
+    <!-- Success message (shown via JavaScript after form submission) -->
+    <div id="form-success" class="hidden p-4 bg-green-100 text-green-800 rounded">
+        ¡Gracias por contactarnos! Te responderemos pronto.
+    </div>
+
+    <!-- Error message -->
+    <div id="form-error" class="hidden p-4 bg-red-100 text-red-800 rounded">
+        Hubo un error al enviar el formulario. Por favor, intenta nuevamente.
+    </div>
+</form>
+
+<script>
+    // Handle form submission
+    const form = document.querySelector('form[name="contacto"]');
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form as HTMLFormElement);
+            const successDiv = document.getElementById('form-success');
+            const errorDiv = document.getElementById('form-error');
+
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData as any).toString()
+                });
+
+                if (response.ok) {
+                    (form as HTMLFormElement).reset();
+                    successDiv?.classList.remove('hidden');
+                    errorDiv?.classList.add('hidden');
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                errorDiv?.classList.remove('hidden');
+                successDiv?.classList.add('hidden');
+            }
+        });
+    }
+</script>

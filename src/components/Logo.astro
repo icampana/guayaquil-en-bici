@@ -1,33 +1,32 @@
 ---
-import { Image } from 'astro:assets';
-import logo from '../assets/astro.svg';
+import { siteConfig } from '@data/config';
+
 interface Props {
     variant?: 'header' | 'footer' | 'dark';
 }
 
 const { variant = 'header' } = Astro.props;
 
-// Determine the appropriate CSS class based on the variant
-const getLogoClass = () => {
+// Determine the logo size based on variant
+const getLogoHeight = () => {
     switch (variant) {
         case 'header':
-            return 'text-header-logo hover:text-primary';
+            return 'h-12'; // 48px for header
         case 'footer':
-            return 'text-footer-logo hover:text-primary';
+            return 'h-10'; // 40px for footer
         case 'dark':
-            return 'text-body-base hover:text-primary';
+            return 'h-12';
         default:
-            return 'text-body-base hover:text-primary';
+            return 'h-12';
     }
 };
 ---
 
-<a href="/" class:list={['logo uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
-    {
-        // If image is the only element in this link, its alt attribute should be a textual representation.
-        // Please, use something like your company name or “Home”, not “logo.”
-        // If there is link text, leave alt empty.
-    }
-    <Image src={logo} alt="" class="hidden" />
-    <span class="font-bold">Titan</span> Core
+<a href="/" class="logo transition-opacity duration-200 hover:opacity-80 flex items-center gap-2">
+    <img
+        src="/logo-geb.png"
+        alt={siteConfig.companyName}
+        class:list={['w-auto', getLogoHeight()]}
+    />
+    <span class="font-bold text-lg hidden sm:inline-block">{siteConfig.companyName}</span>
 </a>
