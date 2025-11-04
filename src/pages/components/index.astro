@@ -14,8 +14,8 @@ import { faqLists } from '@data/faqs';
 import RecentPosts from '@components/sections/RecentPosts.astro';
 import InnerHero from '@components/sections/InnerHero.astro';
 import TeamGrid from '@components/sections/TeamGrid.astro';
-import defaultHero from '@assets/images/home/default-hero.jpg';
-import defaultHero2 from '@assets/images/home/default-hero-2.jpg';
+import defaultHero from '@assets/images/home/default-hero-geb.png';
+import defaultHero2 from '@assets/images/home/default-hero-geb.png';
 import developerImg from '@assets/images/home/developer.jpg';
 
 const seoTitle = "Component Library - Titan Core";
@@ -180,8 +180,8 @@ const recentPostsSection = {
                 <ul class="space-y-1">
                     {componentSections.map(section => (
                         <li>
-                            <a 
-                                href={`#${section.id}`} 
+                            <a
+                                href={`#${section.id}`}
                                 class="component-nav-link flex items-center p-1.5 rounded-md hover:bg-gray-100 transition-colors text-xs"
                                 data-section={section.id}
                             >
@@ -204,7 +204,7 @@ const recentPostsSection = {
             <Hero content={heroContent} />
         </div>
     </section>
-    
+
     <section id="innerHero" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -213,7 +213,7 @@ const recentPostsSection = {
             <InnerHero content={innerHeroContent} />
         </div>
     </section>
-    
+
     <section id="features" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -222,7 +222,7 @@ const recentPostsSection = {
             <Features content={featuresSection} padding="base" background="light" />
         </div>
     </section>
-    
+
     <section id="recentPosts" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -231,7 +231,7 @@ const recentPostsSection = {
             <RecentPosts content={recentPostsSection} background="base" padding="base" postsToShow={3} category="Theme Usage"/>
         </div>
     </section>
-    
+
     <section id="splitPanel" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -240,7 +240,7 @@ const recentPostsSection = {
             <SplitPanel content={styleGuideSection} imagePosition="right" background="light" padding="base" />
         </div>
     </section>
-    
+
     <section id="ctaBanner" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -249,7 +249,7 @@ const recentPostsSection = {
             <CtaBanner content={mainCta} variant="contained" background="light" padding="base" />
         </div>
     </section>
-    
+
     <section id="logos" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -258,7 +258,7 @@ const recentPostsSection = {
             <Logos content={logosSection} background="base" padding='base'/>
         </div>
     </section>
-    
+
     <section id="stats" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -267,7 +267,7 @@ const recentPostsSection = {
             <Stats content={sideBySideStats} background='dark' padding="base"/>
         </div>
     </section>
-    
+
     <section id="faqs" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -276,7 +276,7 @@ const recentPostsSection = {
             <Faqs content={faqsSection} background="base" padding="base" />
         </div>
     </section>
-    
+
     <section id="teamGrid" class="component-section relative mb-16">
         <div class="component-wrapper relative transition-all duration-500">
             <div class="component-label hidden absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-3 rounded-md text-xs font-medium z-10 shadow-md">
@@ -295,43 +295,43 @@ const recentPostsSection = {
         const navLinks = document.querySelectorAll('.component-nav-link');
         const componentWrappers = document.querySelectorAll('.component-wrapper');
         const componentLabels = document.querySelectorAll('.component-label');
-        
+
         // Initialize Lucide icons
         // @ts-ignore - Lucide is loaded globally but TypeScript doesn't know about it
         if (typeof window.lucide !== 'undefined') {
             // @ts-ignore
             window.lucide.createIcons();
         }
-        
+
         // Function to update active navigation link and component
         const updateActiveLink = () => {
             // Get current scroll position
             const scrollPosition = window.scrollY;
-            
+
             // Find the current section
             sections.forEach((section, index) => {
                 const sectionTop = section.getBoundingClientRect().top + window.scrollY;
                 const sectionHeight = section.getBoundingClientRect().height;
                 const sectionId = section.getAttribute('id');
-                
+
                 if (sectionId && scrollPosition >= sectionTop - 200 && scrollPosition < sectionTop + sectionHeight - 200) {
                     // Remove active class from all links
                     navLinks.forEach(link => {
                         link.classList.remove('bg-primary', 'text-white');
                     });
-                    
+
                     // Reset all component wrappers
                     componentWrappers.forEach((wrapper, i) => {
                         wrapper.classList.remove('border-4', 'border-primary', 'shadow-lg', 'bg-white');
                         componentLabels[i].classList.add('hidden');
                     });
-                    
+
                     // Add active class to current section link
                     const activeLink = document.querySelector(`.component-nav-link[data-section="${sectionId}"]`);
                     if (activeLink) {
                         activeLink.classList.add('bg-primary', 'text-white');
                     }
-                    
+
                     // Highlight active component
                     const activeWrapper = componentWrappers[index];
                     const activeLabel = componentLabels[index];
@@ -342,23 +342,23 @@ const recentPostsSection = {
                 }
             });
         };
-        
+
         // Add scroll event listener
         window.addEventListener('scroll', updateActiveLink);
-        
+
         // Initial call to set active link on page load
         updateActiveLink();
-        
+
         // Add smooth scrolling for navigation links
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const href = link.getAttribute('href');
                 if (!href) return;
-                
+
                 const targetId = href.substring(1);
                 const targetSection = document.getElementById(targetId);
-                
+
                 if (targetSection) {
                     const targetTop = targetSection.getBoundingClientRect().top + window.scrollY;
                     window.scrollTo({
@@ -375,7 +375,7 @@ const recentPostsSection = {
     .component-section {
         scroll-margin-top: 100px;
     }
-    
+
     .component-wrapper {
         position: relative;
         z-index: 1;

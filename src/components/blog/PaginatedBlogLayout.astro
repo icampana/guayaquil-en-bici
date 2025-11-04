@@ -5,7 +5,7 @@ import InnerHero from '../sections/InnerHero.astro';
 import Button from '../ui/Button.astro';
 import { ChevronLeft, ChevronRight } from 'lucide-astro';
 
-import blogHeroImage from '@assets/images/blog-hero-2.jpg';
+import blogHeroImage from '@assets/images/home/default-hero-geb.png';
 
 const seoTitle = "Blog";
 const seoDescription = "Our blog is where we share our thoughts and ideas about the latest trends in the web development industry.";
@@ -20,20 +20,20 @@ interface Props {
     currentCategory?: string;
 }
 
-const { 
-    posts: paginatedPosts, 
-    currentPage, 
-    totalPages, 
+const {
+    posts: paginatedPosts,
+    currentPage,
+    totalPages,
     baseUrl,
     title,
     subtitle,
-    currentCategory 
+    currentCategory
 } = Astro.props;
 
     // Generate pagination URLs
 const nextPage = currentPage < totalPages ? `${baseUrl}/${currentPage + 1}` : null;
-const prevPage = currentPage > 1 
-? currentPage - 1 === 1 
+const prevPage = currentPage > 1
+? currentPage - 1 === 1
 ? baseUrl
 : `${baseUrl}/${currentPage - 1}`
 : null;
@@ -60,7 +60,7 @@ const heroContent = {
                             Previous
                         </Button>
                     )}
-                    
+
                     <div class="flex items-center gap-2">
                         {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
                             <a
@@ -88,4 +88,4 @@ const heroContent = {
         </nav>
     )}
     </main>
-</Layout> 
+</Layout>

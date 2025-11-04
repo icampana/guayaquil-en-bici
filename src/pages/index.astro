@@ -1,19 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.astro';
-import SplitPanel from '@components/sections/SplitPanel.astro';
 import Features from '@components/sections/Features.astro';
-import Stats from '@components/sections/Stats.astro';
 import { featureLists } from '@data/features';
-import { statsLists } from '@data/stats';
-import Logos from '@components/sections/Logos.astro';
-import { logoLists } from '@data/logos';
 import CtaBanner from '@components/sections/CtaBanner.astro';
-import Faqs from '@components/sections/Faqs.astro';
-import { faqLists } from '@data/faqs';
 import RecentPosts from '@components/sections/RecentPosts.astro';
-import heroImage from '../assets/images/home/default-hero-2.jpg';
-import styleGuideImage from '../assets/images/home/developer.jpg';
+import heroImage from '../assets/images/home/default-hero-geb.png';
 
 const seoTitle = "Guayaquil en Bici - Movilidad Sostenible";
 const seoDescription = "Colectivo ciudadano que promueve el uso de la bicicleta como medio de transporte sostenible en Guayaquil, Ecuador.";
@@ -61,40 +53,6 @@ const FooterCta = {
     }
 }
 
-const styleGuideSection = {
-    eyebrow: "Design System",
-    headline: "Consistent & Beautiful Components",
-    description: "Titan Core comes with a complete style guide to ensure your projects maintain visual consistency. From typography to interactive elements, we've carefully crafted each component.",
-    image: {
-        src: styleGuideImage,
-        alt: "Featured image"
-    },
-    buttons: [
-        {
-            text: "Explore Style Guide",
-            link: "/style-guide",
-            variant: "primary" as const
-        }
-    ]
-}
-
-const sideBySideStats = {
-    eyebrow: "Stats",
-    title: "Built for Speed and Flexibility",
-    description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
-    variant: 'side-by-side' as const,
-    stats: statsLists.withContent.stats,
-    content: {
-        title: "Built for Speed and Flexibility",
-        description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
-        button: {
-            text: "Discover Titan Core",
-            link: "/theme-info",
-            variant: "primary" as const
-        }
-    }
-};
-
 const mainCta = {
     eyebrow: "Nuestras Actividades",
     title: "Participa en Nuestros Eventos",
@@ -106,19 +64,6 @@ const mainCta = {
         target: "_self" as const
     }
 };
-
-
-const logosSection = {
-    eyebrow: "Our Clients",
-    logos: logoLists.main.logos
-}
-
-const faqsSection = {
-    eyebrow: "FAQs",
-    title: 'Frequently Asked Questions',
-    description: 'Find answers to common questions about our platform and services.',
-    faqs: faqLists.main.faqs
-}
 
 const recentPostsSection = {
     eyebrow: "ÚLTIMAS NOTICIAS",
