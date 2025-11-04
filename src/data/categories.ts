@@ -6,41 +6,70 @@ interface Category {
 
 export const categories: Category[] = [
   {
-    name: 'Tech',
-    slug: 'tech',
-    description: 'Latest in technology and software development'
+    name: 'Noticias',
+    slug: 'noticias',
+    description: 'Últimas noticias sobre ciclismo urbano y movilidad sostenible'
   },
   {
-    name: 'Web Development',
-    slug: 'web-development',
-    description: 'Tips and insights for better web development'
+    name: 'Destacadas',
+    slug: 'destacadas',
+    description: 'Contenido destacado y artículos más relevantes'
   },
   {
-    name: 'Design',
-    slug: 'design',
-    description: 'Exploring design and user experience'
+    name: 'Locales',
+    slug: 'locales',
+    description: 'Noticias y eventos locales de ciclismo'
   },
   {
-    name: 'Accessibility',
-    slug: 'accessibility',
-    description: 'Exploring accessibility and user experience'
+    name: 'Internacionales',
+    slug: 'internacionales',
+    description: 'Noticias de ciclismo y movilidad a nivel internacional'
   },
   {
-    name: 'Theme Usage',
-    slug: 'theme-usage',
-    description: 'Learn how to use the theme'
+    name: 'Opinión',
+    slug: 'opinion',
+    description: 'Artículos de opinión y reflexiones sobre movilidad'
   },
   {
-    name: 'Astro JS',
-    slug: 'astro-js',
-    description: 'Everything about Astro JS framework and development'
+    name: 'Reportajes',
+    slug: 'reportajes',
+    description: 'Reportajes en profundidad sobre ciclismo urbano'
   },
   {
-    name: 'SEO',
-    slug: 'seo',
-    description: 'Search engine optimization strategies and best practices'
+    name: 'Entrevistas',
+    slug: 'entrevistas',
+    description: 'Entrevistas con ciclistas y activistas'
   },
-  
+  {
+    name: 'Información',
+    slug: 'informacion',
+    description: 'Información útil para ciclistas urbanos'
+  },
+  {
+    name: 'Seguridad',
+    slug: 'seguridad',
+    description: 'Consejos y tips de seguridad para ciclistas'
+  },
+  {
+    name: 'Espacios Públicos',
+    slug: 'espacios-publicos',
+    description: 'Infraestructura ciclista y espacios públicos'
+  },
+  {
+    name: 'Fotos',
+    slug: 'fotos',
+    description: 'Galerías fotográficas y contenido visual'
+  },
+  {
+    name: 'Videos',
+    slug: 'videos',
+    description: 'Contenido en video sobre ciclismo'
+  },
+  {
+    name: 'Indumentaria',
+    slug: 'indumentaria',
+    description: 'Equipamiento y vestimenta para ciclistas'
+  },
 ];
 
 // Helper function to get category by slug

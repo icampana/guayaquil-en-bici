@@ -1,0 +1,31 @@
+[
+  {
+    "vid": "1",
+    "name": "Tags",
+    "machine_name": "tags",
+    "description": "Use tags to group articles on similar topics into categories."
+  },
+  {
+    "vid": "2",
+    "name": "Blog categories",
+    "machine_name": "blog_categories",
+    "description": ""
+  },
+  {
+    "vid": "3",
+    "name": "Portfolio",
+    "machine_name": "portfolio",
+    "description": ""
+  },
+  {
+    "vid": "4",
+    "name": "Event Status",
+    "machine_name": "event_calendar_status",
+    "description": "Descripción"
+  },
+  {
+    "vid": "5",
+    "name": "Categoria Videos",
+    "machine_name": "categoria_videos"
+  }
+]

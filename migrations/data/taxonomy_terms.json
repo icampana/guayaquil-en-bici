@@ -1,0 +1,996 @@
+[
+  {
+    "tid": "11",
+    "vid": "1",
+    "name": "tag 1",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "12",
+    "vid": "1",
+    "name": "tag 2",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "13",
+    "vid": "1",
+    "name": "tag 3",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "14",
+    "vid": "1",
+    "name": "tag 4",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "15",
+    "vid": "1",
+    "name": "tag 5",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "16",
+    "vid": "1",
+    "name": "tag 6",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "17",
+    "vid": "1",
+    "name": "tag 7",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "18",
+    "vid": "1",
+    "name": "tag 8",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "19",
+    "vid": "1",
+    "name": "tag1",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "20",
+    "vid": "1",
+    "name": "tag2",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "21",
+    "vid": "1",
+    "name": "tag3",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "25",
+    "vid": "1",
+    "name": "pruebas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "29",
+    "vid": "1",
+    "name": "Alberto Hidalgo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "30",
+    "vid": "1",
+    "name": "bicicleta",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "31",
+    "vid": "1",
+    "name": "Derechos Humanos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "32",
+    "vid": "1",
+    "name": "Fotografia",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "33",
+    "vid": "1",
+    "name": "Guayaquil",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "34",
+    "vid": "1",
+    "name": "Manso Hostal",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "44",
+    "vid": "1",
+    "name": "507",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "45",
+    "vid": "1",
+    "name": "alquiler de bicicletas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "46",
+    "vid": "1",
+    "name": "amsterdam",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "47",
+    "vid": "1",
+    "name": "atacames",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "48",
+    "vid": "1",
+    "name": "aventura",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "49",
+    "vid": "1",
+    "name": "ayuda social",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "50",
+    "vid": "1",
+    "name": "Bellavista",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "51",
+    "vid": "1",
+    "name": "Beneficios",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "52",
+    "vid": "1",
+    "name": "Bici.Ruta Recreativa",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "53",
+    "vid": "1",
+    "name": "Bici.Rutas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "54",
+    "vid": "1",
+    "name": "bicicleta personalizada",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "55",
+    "vid": "1",
+    "name": "BiciRUta Recreativa",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "56",
+    "vid": "1",
+    "name": "buen vivir",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "57",
+    "vid": "1",
+    "name": "casco",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "58",
+    "vid": "1",
+    "name": "Cerro Paraíso",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "59",
+    "vid": "1",
+    "name": "ciclismo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "60",
+    "vid": "1",
+    "name": "ciclismo de montaña",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "61",
+    "vid": "1",
+    "name": "ciclismo deportivo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "62",
+    "vid": "1",
+    "name": "ciclismo urbano",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "63",
+    "vid": "1",
+    "name": "ciclistas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "64",
+    "vid": "1",
+    "name": "ciclopaseo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "65",
+    "vid": "1",
+    "name": "ciclovías",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "66",
+    "vid": "1",
+    "name": "ciudad",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "67",
+    "vid": "1",
+    "name": "comida",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "68",
+    "vid": "1",
+    "name": "Comisión de Tránsito",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "69",
+    "vid": "1",
+    "name": "competencia",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "70",
+    "vid": "1",
+    "name": "Comunidad",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "71",
+    "vid": "1",
+    "name": "conciencia ambiental",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "72",
+    "vid": "1",
+    "name": "Consejos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "73",
+    "vid": "1",
+    "name": "Convivencia",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "74",
+    "vid": "1",
+    "name": "Cuidado de la bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "75",
+    "vid": "1",
+    "name": "deportes extremos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "76",
+    "vid": "1",
+    "name": "Dia Mundial Sin Auto",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "77",
+    "vid": "1",
+    "name": "donaciones",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "78",
+    "vid": "1",
+    "name": "ecología",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "79",
+    "vid": "1",
+    "name": "ecuador",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "80",
+    "vid": "1",
+    "name": "ecuador aventura",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "81",
+    "vid": "1",
+    "name": "ejercicio",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "82",
+    "vid": "1",
+    "name": "empresa",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "83",
+    "vid": "1",
+    "name": "en bici al trabajo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "84",
+    "vid": "1",
+    "name": "espacios publicos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "85",
+    "vid": "1",
+    "name": "famosos en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "86",
+    "vid": "1",
+    "name": "fiesta",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "87",
+    "vid": "1",
+    "name": "fotos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "88",
+    "vid": "1",
+    "name": "guayaquileña",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "89",
+    "vid": "1",
+    "name": "guayaquileños",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "90",
+    "vid": "1",
+    "name": "Historias",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "91",
+    "vid": "1",
+    "name": "historias en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "92",
+    "vid": "1",
+    "name": "Hora del Planeta",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "93",
+    "vid": "1",
+    "name": "huecas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "94",
+    "vid": "1",
+    "name": "información",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "95",
+    "vid": "1",
+    "name": "instrucciones",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "96",
+    "vid": "1",
+    "name": "Jaime Nebot",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "97",
+    "vid": "1",
+    "name": "juegos especiales",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "98",
+    "vid": "1",
+    "name": "leyes",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "99",
+    "vid": "1",
+    "name": "locos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "100",
+    "vid": "1",
+    "name": "locos en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "101",
+    "vid": "1",
+    "name": "Mantenimiento",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "102",
+    "vid": "1",
+    "name": "masa crítica",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "103",
+    "vid": "1",
+    "name": "medio ambiente",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "104",
+    "vid": "1",
+    "name": "memorias en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "105",
+    "vid": "1",
+    "name": "México DF",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "106",
+    "vid": "1",
+    "name": "movilidad sostenible",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "107",
+    "vid": "1",
+    "name": "Movistar",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "108",
+    "vid": "1",
+    "name": "mtb",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "109",
+    "vid": "1",
+    "name": "mujeres en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "110",
+    "vid": "1",
+    "name": "multas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "111",
+    "vid": "1",
+    "name": "Municipio",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "112",
+    "vid": "1",
+    "name": "Municipio de Guayaquil",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "113",
+    "vid": "1",
+    "name": "nutrición",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "114",
+    "vid": "1",
+    "name": "Ordenanza",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "115",
+    "vid": "1",
+    "name": "Playas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "116",
+    "vid": "1",
+    "name": "Policía",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "117",
+    "vid": "1",
+    "name": "Portoviejo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "118",
+    "vid": "1",
+    "name": "Relatos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "119",
+    "vid": "1",
+    "name": "Reparación",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "120",
+    "vid": "1",
+    "name": "responsabilidad social",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "121",
+    "vid": "1",
+    "name": "rodada de altura",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "122",
+    "vid": "1",
+    "name": "salinas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "123",
+    "vid": "1",
+    "name": "salud",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "124",
+    "vid": "1",
+    "name": "Samborondón",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "125",
+    "vid": "1",
+    "name": "seguridad",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "126",
+    "vid": "1",
+    "name": "sistema publico",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "127",
+    "vid": "1",
+    "name": "Taller En Casa",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "128",
+    "vid": "1",
+    "name": "tipos de bicicletas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "129",
+    "vid": "1",
+    "name": "trabajo en bicicleta",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "130",
+    "vid": "1",
+    "name": "tráfico",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "131",
+    "vid": "1",
+    "name": "Tránsito",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "132",
+    "vid": "1",
+    "name": "Velocity Sevilla",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "133",
+    "vid": "1",
+    "name": "viajes",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "134",
+    "vid": "1",
+    "name": "viajes en bici",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "135",
+    "vid": "1",
+    "name": "Vintage",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "139",
+    "vid": "1",
+    "name": "turismo",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "145",
+    "vid": "1",
+    "name": "leyes bicicletas cuestionarios licencias ANT Ecuador",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "22",
+    "vid": "2",
+    "name": "Espacios Públicos",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "23",
+    "vid": "2",
+    "name": "Locales",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "24",
+    "vid": "2",
+    "name": "Noticias",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "26",
+    "vid": "2",
+    "name": "Destacadas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "27",
+    "vid": "2",
+    "name": "Información",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "28",
+    "vid": "2",
+    "name": "Seguridad",
+    "description": "Información sobre medidas y recomendaciones de seguridad para poder rodar en la ciudad.",
+    "weight": "0"
+  },
+  {
+    "tid": "35",
+    "vid": "2",
+    "name": "Entrevistas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "36",
+    "vid": "2",
+    "name": "Fotos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "37",
+    "vid": "2",
+    "name": "Indumentaria",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "38",
+    "vid": "2",
+    "name": "Opinión",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "39",
+    "vid": "2",
+    "name": "Reportajes",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "40",
+    "vid": "2",
+    "name": "Videos",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "41",
+    "vid": "2",
+    "name": "Entrevistas",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "42",
+    "vid": "2",
+    "name": "Internacionales",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "43",
+    "vid": "2",
+    "name": "Locales",
+    "description": null,
+    "weight": "0"
+  },
+  {
+    "tid": "5",
+    "vid": "2",
+    "name": "Collaboration",
+    "description": "",
+    "weight": "1"
+  },
+  {
+    "tid": "1",
+    "vid": "2",
+    "name": "Deal",
+    "description": "",
+    "weight": "2"
+  },
+  {
+    "tid": "4",
+    "vid": "2",
+    "name": "Development",
+    "description": "",
+    "weight": "3"
+  },
+  {
+    "tid": "7",
+    "vid": "3",
+    "name": "Hello World",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "8",
+    "vid": "3",
+    "name": "PHP",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "9",
+    "vid": "3",
+    "name": "Web Design",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "10",
+    "vid": "3",
+    "name": "Web Development",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "136",
+    "vid": "4",
+    "name": "approved",
+    "description": null,
+    "weight": "1"
+  },
+  {
+    "tid": "137",
+    "vid": "4",
+    "name": "pending",
+    "description": null,
+    "weight": "2"
+  },
+  {
+    "tid": "138",
+    "vid": "4",
+    "name": "denied",
+    "description": null,
+    "weight": "2"
+  },
+  {
+    "tid": "140",
+    "vid": "5",
+    "name": "Mecánica de bicicletas",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "141",
+    "vid": "5",
+    "name": "Seguridad",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "142",
+    "vid": "5",
+    "name": "Técnica",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "143",
+    "vid": "5",
+    "name": "MTB",
+    "description": "",
+    "weight": "0"
+  },
+  {
+    "tid": "144",
+    "vid": "5",
+    "name": "Cultura de la bici",
+    "description": "",
+    "weight": "0"
+  }
+]

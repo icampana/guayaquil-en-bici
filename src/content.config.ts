@@ -2,27 +2,27 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { categories } from '@data/categories';
 
-// Extract category names for the enum
-const categoryNames = categories.map((category) => category.name);
+// Extract category slugs for the enum (slugs are used in frontmatter)
+const categorySlugs = categories.map((category) => category.slug);
 
 const blog = defineCollection({
     loader: glob({ base: './src/content/blog', pattern: '**/*.md' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            excerpt: z.string(),
-            featuredImage: image().optional(),
-            publishDate: z.string().transform((str) => new Date(str)),
-            publish: z.boolean().optional(),
-            categories: z.array(z.enum(categoryNames as [string, ...string[]])),
-            seo: z
-                .object({
-                    title: z.string().optional(),
-                    description: z.string().optional(),
-                    image: z.string().optional(),
-                })
-                .optional(),
-        }),
+    schema: z.object({
+        title: z.string(),
+        excerpt: z.string(),
+        featuredImage: z.string().optional(),
+        publishDate: z.string().transform((str) => new Date(str)),
+        publish: z.boolean().optional(),
+        categories: z.array(z.enum(categorySlugs as [string, ...string[]])).optional(),
+        tags: z.array(z.string()).optional(),
+        seo: z
+            .object({
+                title: z.string().optional(),
+                description: z.string().optional(),
+                image: z.string().optional(),
+            })
+            .optional(),
+    }),
 });
 
 const team = defineCollection({
@@ -75,37 +75,34 @@ const page = defineCollection({
 
 const service = defineCollection({
     loader: glob({ base: './src/content/services', pattern: '**/*.md' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            excerpt: z.string().optional(),
-            icon: image().optional(),
-            link: z.string().optional(),
-            order: z.number().default(0),
-        }),
+    schema: z.object({
+        title: z.string(),
+        excerpt: z.string().optional(),
+        icon: z.string().optional(),
+        link: z.string().optional(),
+        order: z.number().default(0),
+    }),
 });
 
 const video = defineCollection({
     loader: glob({ base: './src/content/videos', pattern: '**/*.md' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            videoUrl: z.string(),
-            category: z.string().optional(),
-            thumbnail: image().optional(),
-        }),
+    schema: z.object({
+        title: z.string(),
+        videoUrl: z.string(),
+        category: z.string().optional(),
+        thumbnail: z.string().optional(),
+    }),
 });
 
 const banner = defineCollection({
     loader: glob({ base: './src/content/banners', pattern: '**/*.md' }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            image: image(),
-            link: z.string().optional(),
-            order: z.number().default(0),
-            active: z.boolean().default(true),
-        }),
+    schema: z.object({
+        title: z.string(),
+        image: z.string(),
+        link: z.string().optional(),
+        order: z.number().default(0),
+        active: z.boolean().default(true),
+    }),
 });
 
 export const collections = { blog, team, legal, page, service, video, banner };

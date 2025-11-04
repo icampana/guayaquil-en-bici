@@ -1,0 +1,22 @@
+---
+title: "Reseña de la Rodada de Altura 2014 "
+excerpt: "Este año con el mensaje “En tacones y en bicicleta, por una ciudad menos violenta”, La Rodada de Altura logró integrar aproximadamente a 600 personas para celebrar el Día Internacional de la Mujer de "
+publishDate: "2014-04-09T00:00:32.000Z"
+publish: true
+categories:
+  - "destacadas"
+  - "locales"
+featuredImage: "/uploads/wp-content/uploads/2014/04/Panorama_RODADA2014.jpg"
+---
+
+Este año con el mensaje “En tacones y en bicicleta, por una ciudad menos violenta”, La Rodada de Altura logró integrar aproximadamente a 600 personas para celebrar el Día Internacional de la Mujer de una forma distinta. Tuvimos una excelente respuesta de las guayaquileñas quienes deseaban dar a conocer la importancia de que se las respete en las calles, en los carros, en bicicleta y a pie. “La galantería no se puede confundir con palabras obscenas y gestos que intimidan y violentan a las mujeres al andar por las calles”, expresó una de las convocadas.
+
+Realmente para nuestro colectivo ciudadano este evento ha sido todo un reto, pues aprovechando la fecha vimos la necesidad de llevar este mensaje junto con la importancia del uso de la bicicleta y la libertad de disfrutar nuestros espacios públicos. Se registraron 393 mujeres y fueron acompañadas de sus amigos, esposos, novios e hijos a este evento que por tercer año consecutivo se lleva en la ciudad de Guayaquil y simultáneamente en otras ciudades en Latinoamérica.
+
+Gracias a la colaboración de diferentes entidades públicas, privadas, empresarios, y embajadas que confiaron en nuestro colectivo y afirmaron a través de su participación su apoyo al concepto de responsabilidad por el medio ambiente, por la salud, por el respeto a la mujer, por una sociedad con una mejor convivencia vial, durante todo el evento sorteamos los premios y ordenes de consumo que nuestros auspiciantes nos habían facilitado previamente y para quienes dirigimos un [agradecimiento especial](http://www.guayaquilenbici.org/2014/03/25/muchas-gracias/).
+
+La Rodada de Altura conllevó un recorrido de 6 km aproximadamente. Acompañando nuestra celebración tuvimos el apoyo de los POLICICLOS de la Policía Nacional y la Comisión de Tránsito del Ecuador, visitando atractivos turísticos y culturales de la ciudad como Plaza Centenario en el cual nos esperaba la agrupación Cultural GUETTO con una roda de Capoeira, luego continuamos hacía el Hemiciclo de La Rotonda en donde tomamos la foto oficial del evento y finalmente retornamos hacía la Plaza Baquerizo Moreno donde nos daba la bienvenida la Banda Blanca de la Armada Nacional, luego tuvimos unas breves palabras de una representante del Centro Ecuatoriano para la Promoción y Acción de la Mujer CEPAM, quien participó junto con su agrupación juvenil con un “Flashmob” que puso a bailar a los asistentes. También se organizó un desfile de modas en bicicleta para promover las actividades de los grupos ciclísticos de la ciudad y posteriormente la participación del grupo de Danza OPA quienes prepararon una obra sobre la NO VIOLENCIA a la Mujer.
+
+Finalmente esta tarde/noche de emoción femenina daría como resultado un [discurso](http://www.guayaquilenbici.org/2014/04/08/discurso-leido-al-marco-de-la-3era-rodada-de-altura-en-tacos-y-en-bicicleta-por-una-ciudad-menos-violenta/) sobre el mensaje que queríamos llevar y la creación del [manifiesto ciudadano](http://www.guayaquilenbici.org/2014/04/08/manifiesto-ciudadano-por-el-derecho-a-circular-y-pedalear-en-condiciones-dignas/) que luego compartiríamos con las autoridades de Guayaquil para que este evento no quede solo en fotos y recuerdos, sino que el mensaje de la Rodada de Altura trascienda a la realidad buscando tener una ciudad con conciencia de convivencia, donde las mujeres podamos andar con falda, pantalón o vestido siendo respetadas por peatones, ciclistas, automovilistas y que tal nivel de respeto y conciencia permita que podamos circular utilizando nuestros espacios públicos correctamente sin ser agredidas verbalmente.
+
+Este evento ciclístico también permitió realizar el primer levantamiento de información de ciclismo urbano en la ciudad de Guayaquil, cuyos resultados serán compartidos oportunamente para las autoridades y ciudadanía en general. Gracias a todos los que formaron parte de esta magnífica fiesta en honor a la mujer y sigamos trabajando juntos por el sueño de una ciudad sin violencia.
