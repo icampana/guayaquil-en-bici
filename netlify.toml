@@ -17,14 +17,6 @@
   # Enable pnpm
   NPM_FLAGS = "--version"
 
-# Cache settings for faster builds
-[[plugins]]
-  package = "@netlify/plugin-caching"
-
-  [plugins.inputs]
-    # Cache node_modules
-    paths = [ "node_modules", ".pnpm-store" ]
-
 # Headers for security and performance
 [[headers]]
   for = "/*"
