@@ -7,10 +7,10 @@
   # Output directory
   publish = "dist"
 
-  # Node version
-  environment = { NODE_VERSION = "20.18.1" }
-
 [build.environment]
+  # Node version
+  NODE_VERSION = "20.18.1"
+
   # Public site URL for production
   PUBLIC_SITE_URL = "https://guayaquilenbici.org"
 
