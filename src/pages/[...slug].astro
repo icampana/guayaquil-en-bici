@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+
+export async function getStaticPaths() {
+    const pages = await getCollection('pages');
+    return pages.map((page) => ({
+        params: { slug: page.id },
+        props: { page },
+    }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+
+// Use SEO data from frontmatter if available, fallback to regular page data
+const seoTitle = page.data.seo?.title || page.data.title;
+const seoDescription = page.data.seo?.description || page.data.excerpt;
+
+// For SEO image, use the seo.image if provided
+let seoImage: string | undefined = page.data.seo?.image;
+
+// If seoImage is provided but not an absolute URL, make it absolute
+if (seoImage && !seoImage.startsWith('http')) {
+    const siteUrl = import.meta.env.SITE || 'https://guayaquilenbici.org';
+    seoImage = new URL(seoImage.startsWith('/') ? seoImage : `/${seoImage}`, siteUrl).toString();
+}
+---
+
+<Layout title={seoTitle} description={seoDescription} image={seoImage}>
+    <article class="site-container--small mx-auto px-4 prose py-24">
+        <div class="mb-12">
+            <h1>{page.data.title}</h1>
+        </div>
+
+        <div class="mt-8">
+            <Content />
+        </div>
+    </article>
+</Layout>
