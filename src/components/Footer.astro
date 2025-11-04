@@ -22,12 +22,12 @@ interface Props {
 const { footerCta } = Astro.props;
 
 const defaultCta = {
-  title: "Ready to get started?",
-  description: "Join us today and transform your digital presence with our innovative solutions.",
+  title: "¿Listo para pedalear con nosotros?",
+  description: "Únete a Guayaquil en Bici y sé parte del movimiento por una ciudad más sostenible y amigable con las bicicletas.",
   hideCta: false,
   button: {
-    text: "Contact Us",
-    link: "/contact",
+    text: "Contáctanos",
+    link: "/contactanos",
     target: "_self"
   }
 };
@@ -61,12 +61,12 @@ const currentYear = new Date().getFullYear();
       <div class="col-span-1">
         <Logo variant="footer" />
         <p class="mt-4 text-white">
-          Empowering your digital journey with innovative solutions.
+          Promoviendo el ciclismo urbano como medio de transporte sostenible en Guayaquil.
         </p>
       </div>
       
       <div class="col-span-1">
-        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
         <nav>
           <ul class="space-y-2">
             {footerMenu.map(item => (
@@ -79,7 +79,7 @@ const currentYear = new Date().getFullYear();
 
     <div class="mt-8 flex flex-col md:flex-row justify-between items-center">
       <div class="text-body-dark text-sm">
-        © {currentYear} {siteConfig.companyName}. All rights reserved.
+        © {currentYear} {siteConfig.companyName}. Todos los derechos reservados.
       </div>
       
       <nav class="mt-4 md:mt-0">
