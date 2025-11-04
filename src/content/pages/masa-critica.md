@@ -16,7 +16,7 @@ El fenómeno fue dado a conocer en el documental ["Return of the Scorcher"](http
 
 El término está relacionado con teorías sociales que dicen que una revolución social es factible cuando se alcanza una cierta cantidad, una «masa crítica», de apoyo popular. Los lemas más comunes en el mundo anglosajón son «Usa la bici a diario, celébralo una vez al mes», o «no bloqueamos el tráfico, somos el tráfico». En España, se pueden escuchar consignas como «No contamina ni gasta gasolina», «Yo pedaleo y no me cabreo», «Cuido mi planeta yendo en bicicleta», Se han pronunciado diversas opiniones sobre si se debe solicitar permiso a las autoridades como en el caso de una manifestación, pero en general el consenso es que no es conveniente que se haga, pues el tráfico de bicicletas debe considerarse algo tan normal como el de vehículos a motor.
 
-[![Masa Crítica - bicis arriba ](http://guayaquilenbici.org/sites/default/files/wp-content/uploads/2010/08/masacritica.jpg "Masa Crítica")](http://guayaquilenbici.org/sites/default/files/wp-content/uploads/2010/08/masacritica.jpg) \\t
+[![Masa Crítica - bicis arriba ](/uploads/wp-content/uploads/2010/08/masacritica.jpg "Masa Crítica")](/uploads/wp-content/uploads/2010/08/masacritica.jpg) \\t
 
 El saludo clásico de la Masa Crítica es con las bicis arriba.
 

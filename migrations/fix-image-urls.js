@@ -14,7 +14,11 @@ const blogDir = join(__dirname, '../src/content/blog');
 // Patterns to match absolute URLs
 const patterns = [
   {
-    pattern: /http:\/\/guayaquilenbici\.org\/wp-content\/uploads\//g,
+    pattern: /https?:\/\/guayaquilenbici\.org\/wp-content\/uploads\//g,
+    replacement: '/uploads/wp-content/uploads/'
+  },
+  {
+    pattern: /https?:\/\/guayaquilenbici\.org\/sites\/default\/files\/wp-content\/uploads\//g,
     replacement: '/uploads/wp-content/uploads/'
   },
   {
