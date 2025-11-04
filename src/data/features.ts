@@ -1,4 +1,4 @@
-import { Zap, Shield, Heart, Coffee, Smile, Type, TabletSmartphone, CodeXml } from 'lucide-astro';
+import { Zap, Shield, Heart, Coffee, Smile, Type, TabletSmartphone, CodeXml, Users, Calendar, MessageCircle, BookOpen, Map, Award } from 'lucide-astro';
 
 // Define the LucideIcon type based on the structure of Lucide icons
 type LucideIcon = typeof Zap;
@@ -20,34 +20,34 @@ export const featureLists: Record<string, FeatureList> = {
         id: 'main',
         features: [
             {
-                icon: Zap,
-                title: 'Lightning Fast Performance',
-                description: 'Optimized for speed and performance'
+                icon: Users,
+                title: 'Comunidad Activa',
+                description: 'Una red de ciclistas urbanos comprometidos con la movilidad sostenible en Guayaquil'
+            },
+            {
+                icon: Calendar,
+                title: 'Eventos Regulares',
+                description: 'Masa Crítica mensual, Día Mundial Sin Auto, Alleycat y más actividades para todos'
             },
             {
                 icon: Shield,
-                title: 'SEO Optimized Structure',
-                description: 'Built with SEO best practices in mind'
+                title: 'Incidencia Ciudadana',
+                description: 'Trabajamos por políticas públicas que promuevan el derecho a circular en bicicleta'
             },
             {
-                icon: TabletSmartphone,
-                title: 'Responsive by Default',
-                description: 'Mobile-friendly out of the box'
+                icon: BookOpen,
+                title: 'Educación y Capacitación',
+                description: 'Talleres, charlas y recursos para promover el ciclismo urbano seguro'
             },
             {
-                icon: Smile,
-                title: 'Easy Customization',
-                description: 'Customize the theme to your liking'
+                icon: MessageCircle,
+                title: 'Espacio de Diálogo',
+                description: 'Conectamos ciclistas, autoridades y ciudadanos para construir soluciones'
             },
             {
-                icon: Type,
-                title: 'TypeScript Support',
-                description: 'Built with TypeScript in mind'
-            },
-            {
-                icon: CodeXml,
-                title: 'Minimal Dependencies',
-                description: 'Keep your project lightweight'
+                icon: Heart,
+                title: 'Inclusión y Diversidad',
+                description: 'Todos son bienvenidos: diferentes edades, géneros y niveles de experiencia'
             }
         ]
     },
