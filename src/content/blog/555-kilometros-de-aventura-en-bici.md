@@ -21,7 +21,7 @@ featuredImage: "/uploads/wp-content/uploads/2012/07/fotoSA_0.jpg"
 
 Me resultó fácil expresar en casa un “ya vengo, voy a pedalear…”, porque no me atreví a decir el destino de aquella pedaleada, y de hecho tampoco lo sabía. Esperanzado en llegar hasta donde me den mis ganas, mis tres billetes de 20dlres y una que otra moneda. J.Luis con su maleta inseparable, Fernando con sus las alforjas nuevas y yo con mi parrilla de estreno, listo para mis primeros kilómetros grapado.
 
-[![Fernando, Miguel y Jorge Luis](http://guayaquilenbici.org/wp-content/uploads/2012/07/fotoSA.jpg)](http://guayaquilenbici.org/wp-content/uploads/2012/07/fotoSA.jpg)
+[![Fernando, Miguel y Jorge Luis](/uploads/wp-content/uploads/2012/07/fotoSA.jpg)](/uploads/wp-content/uploads/2012/07/fotoSA.jpg)
 
 Día 1, partiendo desde Salinas siete y media de la mañana, aquí no había desayuno, ni almuerzo, ni merienda, sólo las ganas de abastecernos de energía con la poderosa gastronomía de la costa ecuatoriana. La brisa de San Pablo, el pan de Cadeate, el turismo de Montañita donde las grapas hacen lo suyo y cobran su primera víctima: la rodilla izquierda, el comercio de Puerto López y terminando en la tranquilidad de Puerto Cayo, donde nos esperaba nuestro primer descanso en casa de una familia de pescadores, tan acogedora, sencilla y humilde.
 

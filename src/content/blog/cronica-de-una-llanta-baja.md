@@ -16,7 +16,7 @@ featuredImage: "/uploads/wp-content/uploads/2012/08/fix-flat-tire_0.jpg"
 
 Esta es la crónica de un pedal que no pudo pedalear. Un vistazo a una falta de previsión que desembocó en una experiencia que refuerza la bondad del ser humano. Un simple suceso que me incrementa el gusto de andar en bicicleta.
 
-[![](http://guayaquilenbici.org/wp-content/uploads/2012/08/fix-flat-tire-300x225.jpg "fix-flat-tire")](http://guayaquilenbici.org/wp-content/uploads/2012/08/fix-flat-tire.jpg)
+[![](/uploads/wp-content/uploads/2012/08/fix-flat-tire-300x225.jpg "fix-flat-tire")](/uploads/wp-content/uploads/2012/08/fix-flat-tire.jpg)
 
 El viernes pasado salí de mi trabajo de lo más contenta. Ustedes saben, viernes, magnífico día, antesala del fin de semana, adiós labores (sí, como no, uno bien sabe que tiene que hacer en el finde lo que no alcanza entre semana _\-inserte aquí risa burlona-_). Caminaba al lugar donde parqueo mi bici, haciendo una lista mental de las actividades que iba a realizar sábado y domingo, y saboreando con anticipación un fabuloso sánduche que iba a prepararme al llegar a casa, para disfrutarlo viendo una película. Llego hasta mi adorada bici, la desencadeno y _\-oh maldito seas Murphy-_, estaba llanta baja.
 
