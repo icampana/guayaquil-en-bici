@@ -5,13 +5,17 @@
     "scripts": {
         "format": "prettier -w .",
         "check": "astro check",
-        "dev": "astro dev",
-        "build": "astro build",
+        "dev": "tinacms dev -c \"astro dev\"",
+        "dev:astro": "astro dev",
+        "build": "tinacms build && astro build",
         "preview": "astro preview",
         "astro": "astro"
     },
     "dependencies": {
-        "aos": "^2.3.4"
+        "@tinacms/cli": "^1.12.0",
+        "aos": "^2.3.4",
+        "sharp": "^0.34.4",
+        "tinacms": "^2.9.1"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
@@ -21,6 +25,7 @@
         "astro": "^5.5.3",
         "lucide-astro": "^0.483.0",
         "prettier": "^3.5.3",
-        "prettier-plugin-astro": "^0.14.1"
+        "prettier-plugin-astro": "^0.14.1",
+        "tailwindcss": "^4.1.16"
     }
 }

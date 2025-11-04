@@ -58,4 +58,54 @@ const legal = defineCollection({
     }),
 });
 
-export const collections = { blog, team, legal };
+const page = defineCollection({
+    loader: glob({ base: './src/content/pages', pattern: '**/*.md' }),
+    schema: z.object({
+        title: z.string(),
+        excerpt: z.string().optional(),
+        publish: z.boolean().default(true),
+        seo: z
+            .object({
+                title: z.string().optional(),
+                description: z.string().optional(),
+            })
+            .optional(),
+    }),
+});
+
+const service = defineCollection({
+    loader: glob({ base: './src/content/services', pattern: '**/*.md' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            excerpt: z.string().optional(),
+            icon: image().optional(),
+            link: z.string().optional(),
+            order: z.number().default(0),
+        }),
+});
+
+const video = defineCollection({
+    loader: glob({ base: './src/content/videos', pattern: '**/*.md' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            videoUrl: z.string(),
+            category: z.string().optional(),
+            thumbnail: image().optional(),
+        }),
+});
+
+const banner = defineCollection({
+    loader: glob({ base: './src/content/banners', pattern: '**/*.md' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            image: image(),
+            link: z.string().optional(),
+            order: z.number().default(0),
+            active: z.boolean().default(true),
+        }),
+});
+
+export const collections = { blog, team, legal, page, service, video, banner };
