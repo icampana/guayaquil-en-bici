@@ -1,6 +1,10 @@
-# Allow all web crawlers
+# robots.txt for Guayaquil en Bici
+
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://titan-core.com/sitemap-index.xml 
+# Sitemaps
+Sitemap: https://guayaquilenbici.org/sitemap-index.xml
+
+# Disallow admin and development paths
+Disallow: /admin/
