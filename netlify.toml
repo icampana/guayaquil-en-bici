@@ -1,0 +1,76 @@
+# Netlify configuration for Guayaquil en Bici
+
+[build]
+  # Build command
+  command = "pnpm run build"
+
+  # Output directory
+  publish = "dist"
+
+  # Node version
+  environment = { NODE_VERSION = "20.18.1" }
+
+[build.environment]
+  # Public site URL for production
+  PUBLIC_SITE_URL = "https://guayaquilenbici.org"
+
+  # Enable pnpm
+  NPM_FLAGS = "--version"
+
+# Cache settings for faster builds
+[[plugins]]
+  package = "@netlify/plugin-caching"
+
+  [plugins.inputs]
+    # Cache node_modules
+    paths = [ "node_modules", ".pnpm-store" ]
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/uploads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects are handled by public/_redirects file
+
+# Forms configuration
+[forms]
+  # Enable Netlify Forms with spam protection
+  [forms.settings]
+    spam_filtering = true
+
+# Deploy contexts
+[context.production]
+  command = "pnpm run build"
+
+[context.deploy-preview]
+  command = "pnpm run build"
+
+[context.branch-deploy]
+  command = "pnpm run build"
+
+# Dev server
+[dev]
+  command = "pnpm run dev"
+  port = 4321
+  targetPort = 4321
+  autoLaunch = false
