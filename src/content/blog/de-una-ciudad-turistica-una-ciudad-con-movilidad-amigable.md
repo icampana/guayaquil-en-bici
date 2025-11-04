@@ -15,27 +15,27 @@ featuredImage: "/uploads/foto_8_pedaleada_nocturna.jpg"
 
 Con una población de 104.874 de acuerdo al Censo Poblacional 2010, Otavalo es el segundo cantón en importancia de la provincia de Imbabura. Sus reconocidos atractivos de preferencia natural como lagunas de San Pablo y Mojanda, Cascadas de Peguche, La Rinconada, El Quinde, Taxopamba; y culturales como Parque Bolívar, Plazoleta González Suárez, Plaza Artesanal Centenario (“de Los Ponchos”), Mercados de animales y Mercado 24 de Mayo, tolas, y museos; y muchos más que me faltarían citar, y visitar.
 
-[![](/sites/default/files/pictures/foto_1parque_bolavar2_0.jpg)](/sites/default/files/pictures/foto_1parque_bolavar2.jpg)
+[![](/uploads/pictures/foto_1parque_bolavar2_0.jpg)](/uploads/pictures/foto_1parque_bolavar2.jpg)
 
 Todo esto enmarcado en la riqueza inmaterial que de preferencia adultos y adultos mayores ofrecen a través de la ejecución de sus tejidos, elaboración de vestimentas (blusas bordadas), artesanías, que no sólo pueden observarse al caminar dentro de la ciudad y recorrer sus calles; sino al ir en los diversos medios de transporte que se usan en la zona urbana y rural.
 
-[![PLAZA DE PONCHOS](/sites/default/files/pictures/foto_2plaza_de_ponchos.jpg)](/sites/default/files/pictures/foto_2plaza_de_ponchos.jpg)
+[![PLAZA DE PONCHOS](/uploads/pictures/foto_2plaza_de_ponchos.jpg)](/uploads/pictures/foto_2plaza_de_ponchos.jpg)
 
 Mientras recorro la ciudad, observo una ciudad dinámica en el día; donde mujeres y hombres trabajan no solo en los negocios de calles principales como la Abdón Calderón (ciclovía), Antonio José de Sucre (semi peatonizada); y las céntricas y turísticas como la Garcia Moreno y Simón Bolívar donde se puede recorrer el Parque Bolívar y disfrutar de la libertad con la que los otavaleños pueden conversar, caminar, sentarse, hasta tomar fotos a turistas nacionales y extranjeros que visitan su ciudad; ciudad donde mestizos, indígenas y afroecuatorianos trabajan para mejorar su economía y la calidad de vida en sus hogares.
 
-[![Calle SIMON BOLIVAR](/sites/default/files/pictures/foto_2.1_calle_sima3n_bolivar2.jpg)](/sites/default/files/pictures/foto_2.1_calle_sima3n_bolivar2.jpg)
+[![Calle SIMON BOLIVAR](/uploads/pictures/foto_2.1_calle_sima3n_bolivar2.jpg)](/uploads/pictures/foto_2.1_calle_sima3n_bolivar2.jpg)
 
 La nota interesante de esta visita es que me descubro inmersa en una ciudad diferente a la que conocí años atrás, donde observo ciclistas de diferentes edades andando en bicicleta no solo en las ciclovías, sino en toda el área urbana; así como para ir a la escuela ó colegio en la parte rural. También veo a tricicleteros haciendo uso de la bicicleta en la ciudad, de manera organizada, pese a que la municipalidad no autoriza su funcionamiento dentro de la ciudad y el cantón, sustentado en el estudio de movilidad que no regula por motivo de desplazamiento a triciclos, tricimotos ó motonetas con acople.
 
-[![Triciclos](/sites/default/files/pictures/foto_3_triciclos.jpg)](/sites/default/files/pictures/foto_3_triciclos.jpg)
+[![Triciclos](/uploads/pictures/foto_3_triciclos.jpg)](/uploads/pictures/foto_3_triciclos.jpg)
 
 Y no puedo olvidar a los “cocheros” muy característicos de esta ciudad, trabajadores que llevan bultos y que están cerca de la plaza de ponchos, plaza artesanal y comercial de Otavalo, quienes tienen su parqueo de coches junto muy cerca del Itur de la ciudad.
 
-[![Coches](/sites/default/files/pictures/foto_4.1coches.jpg)](/sites/default/files/pictures/foto_4.1coches.jpg)
+[![Coches](/uploads/pictures/foto_4.1coches.jpg)](/uploads/pictures/foto_4.1coches.jpg)
 
 Otro aspecto relacionado a la movilidad es el Parqueo Tarifado que inició en noviembre de 2012, y que cuenta con puntos de venta en las áreas de mayor conflicto del centro de la ciudad, donde el conductor puede comprar la tarjeta y facilitar su parqueo mediante el pago de $0,25 por treinta minutos. El perímetro para hacer uso de este servicio se encuentra delimitado por las calles Quito al norte, Olmedo al sur, Atahualpa al este y Modesto Jaramillo al oeste.
 
-[![Calle Parqueo](/sites/default/files/pictures/foto_5calle_parqueo.jpg)](/sites/default/files/pictures/foto_5calle_parqueo.jpg)
+[![Calle Parqueo](/uploads/pictures/foto_5calle_parqueo.jpg)](/uploads/pictures/foto_5calle_parqueo.jpg)
 
 Son estos “detalles” que me motivan a acercarme al Gobierno Descentralizado Municipal de Otavalo (conocido años atrás y recordado en la actualidad como Municipio), y es el Arq. Alejandro Arévalo de la Jefatura de Tránsito de Transporte y Movilidad de Otavalo quien me cuenta más de este proceso.
 
@@ -72,19 +72,19 @@ El incremento de las ciclovías se extendió en la parte rural con la Ciclo Ruta
 
 La participación del ciudadano es fundamental para el desarrollo de una localidad, es por esto que Rolando Beltrán Calderón, líder de Bicipasión grupo ciclístico de Otavalo aporta su apreciación sobre los avances de ciclismo en su ciudad.
 
-![Rolando Beltrán Calderón](/sites/default/files/pictures/foto_6_rolando.jpg)
+![Rolando Beltrán Calderón](/uploads/pictures/foto_6_rolando.jpg)
 
 **Cuéntanos como nace Bicipasión?**
 
 Bicipasión es un grupo ciclístico quien en febrero del 2014 realiza su primera salida con el objetivo de marcar una diferencia, y promover la bicicleta en la ciudad; para esto en alianza con la Liga Deportiva Cantonal de Otavalo realizó la Ruta de la Alegría’, de la que formaron parte el Hospital San Luis de Otavalo y la Reina del Yamor. Es luego de este piloto que se establece realizar las salidas todos los viernes a las 19h00 saliendo desde la Plaza de Los Ponchos, y es en este corto tiempo que cuenta con aproximadamente 35 ciclistas constantes, donde mujeres y hombres (ambos en igual porcentaje) disfrutan de su ciudad. Lo que incentiva al grupo es ver la participación de amas de casa, niños, adolescentes y en menor número personas de la tercera edad.
 
-[![Calle Quiroga](/sites/default/files/pictures/foto_4_itur_calle_quiroga_y_jaramillo.jpg)](/sites/default/files/pictures/foto_4_itur_calle_quiroga_y_jaramillo.jpg)
+[![Calle Quiroga](/uploads/pictures/foto_4_itur_calle_quiroga_y_jaramillo.jpg)](/uploads/pictures/foto_4_itur_calle_quiroga_y_jaramillo.jpg)
 
 **Cuentan con alguna estrategia para motivar a los ciudadanos a andar en bicicleta?**
 
 Bicipasión cuenta con redes sociales, a través de las cuales diferentes empresas se han unido a nuestro propósito sostenible para Otavalo. La seguridad es fundamental para las salidas, por lo que dentro de la logística tenemos que solicitar el permiso de Uso del Espacio Público en el Municipio de Otavalo, quien a su vez lo deriva a la Policía Nacional para que los escolte durante su recorrido. Son estos requerimientos que nos han motivado a en corto tiempo presentarle una propuesta a la Municipalidad en cuanto a los ciclopaseos.
 
-[![Pedaleada nocturna](/sites/default/files/pictures/foto_8_pedaleada_nocturna.jpg)](/sites/default/files/pictures/foto_8_pedaleada_nocturna.jpg)
+[![Pedaleada nocturna](/uploads/pictures/foto_8_pedaleada_nocturna.jpg)](/uploads/pictures/foto_8_pedaleada_nocturna.jpg)
 
 **Cuál es tu apreciación de las ciclovías en Otavalo?**
 

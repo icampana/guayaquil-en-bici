@@ -12,7 +12,7 @@ Estos son algunos de los clubes y grupos de ciclismo que conocemos dentro de la 
 \\t-     
     \\t\\t[LOST Bikers](https://www.facebook.com/LostBikers.org)  
     \\t\\t[www.lostbikers.org](http://www.lostbikers.org)
-\\t-   [![Libre Actividad](/sites/default/files/logo_libreactividad.png)](http://libreactividad.blogspot.com/)  
+\\t-   [![Libre Actividad](/uploads/logo_libreactividad.png)](http://libreactividad.blogspot.com/)  
     \\t\\tLibre Actividad
 \\t-     
     \\t\\t[Ciclistas de la Calle](https://www.facebook.com/ciclistas.delacalle)

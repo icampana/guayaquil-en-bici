@@ -22,6 +22,16 @@ const patterns = [
     replacement: '/uploads/wp-content/uploads/'
   },
   {
+    // Fix Drupal default files path (both absolute and relative)
+    pattern: /https?:\/\/guayaquilenbici\.org\/sites\/default\/files\//g,
+    replacement: '/uploads/'
+  },
+  {
+    // Fix relative /sites/default/files/ paths
+    pattern: /\/sites\/default\/files\//g,
+    replacement: '/uploads/'
+  },
+  {
     // Remove external image references completely (they don't exist locally)
     pattern: /!\[([^\]]*)\]\(https?:\/\/(?!guayaquilenbici\.org)[^\)]+\)(\s*"[^"]*")?/g,
     replacement: '' // Remove the entire markdown image

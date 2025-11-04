@@ -6,7 +6,7 @@ publish: true
 
 ## ¿Qué es un AlleyCat?
 
-[![Personas en un AlleyCat](/sites/default/files/pictures/large_alleycatpeople.jpg)](/sites/default/files/pictures/alleycatpeople.jpg)
+[![Personas en un AlleyCat](/uploads/pictures/large_alleycatpeople.jpg)](/uploads/pictures/alleycatpeople.jpg)
 
 Un alley-cat es una carrera informal que se realiza en las ciudades, se da mucho énfasis en la participación y la camaradería entre los participantes, pero también está la motivación para ganar. Normalmente no hay una ruta establecida, los ciclistas pueden escoger cualquier ruta que quieran tomar para llegar al final lo más pronto posible. Pero no se trata de simplemente llegar a la meta, el formato más común y que se va a manejar en Guayaquil es el de tener hitos por los cuales cada ciclista debe pasar para poder completar la carrera, en cada hito existirán tareas y/o obstáculos que deben ser completados para que el evento sea más divertido y competitivo. Puede ser desde una tarea como responder una pregunta, caminar con los zapatos atados a los de tu compañero, cantar una canción, o cualquier otra tarea divertida.
 
@@ -38,4 +38,4 @@ Se premiará a los tres primeros equipos en llegar al destino final y completar 
 
 Se realiza en diferentes ciudades del mundo y en distintas fechas en las que cada comunidad ciclista trata de organizar eventos con cierta frecuencia. En nuestra ciudad es la primera vez que se realiza, y se efectuará el 9 de agosto. Si quieres saber más información sobre el evento simultáneo que se realizará en otras ciudades del Ecuador, este 9 de agosto, puedes ver más información en su página web: [http://www.elgatoconbici.tk/](http://www.elgatoconbici.tk/)
 
-![El primer Gato de la Independencia](/sites/default/files/pictures/alleycat.jpg)
+![El primer Gato de la Independencia](/uploads/pictures/alleycat.jpg)

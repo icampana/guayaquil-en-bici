@@ -4,7 +4,7 @@ excerpt: "\\n   \\n Buscando promover la cultura de  la bicicleta como medio de 
 publish: true
 ---
 
-![Semana de la movilidad](/sites/default/files/pictures/portada_web_movilidad.jpg)
+![Semana de la movilidad](/uploads/pictures/portada_web_movilidad.jpg)
 
 Buscando promover la cultura de la bicicleta como medio de transporte, herramienta para el cambio climático y fomentar una sociedad con mayor conciencia de convivencia y respeto en la ciudad se viene trabajando con diversos voluntarios a fin de difundir este mensaje. Este año, continuando con nuestro propósito, tenemos programada una agenda de actividades que promueven dichos objetivos. Diferentes grupos ciclistas de la ciudad y varios aliados estratégicos que comparten esta visión de que Guayaquil puede convertirse en este espacio que todos buscamos se han unido para celebrar la semana de la movilidad.
 
@@ -20,7 +20,7 @@ Esta propuesta está respaldada por el Comité Permanente para la Defensa de los
 
 A continuación se incluye el calendario de actividades que se realizarán durante esta semana.
 
-![Calendario de actividades](/sites/default/files/pictures/cuadro_calendario_web.jpg)
+![Calendario de actividades](/uploads/pictures/cuadro_calendario_web.jpg)
 
 Para cada día se han definido puntos de encuentro/partida y horarios especficos, anotalo en tu agenda y no te pierdas ni uno solo de los dias:
 
