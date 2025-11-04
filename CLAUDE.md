@@ -1,0 +1,282 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+**Guayaquil en Bici** - A Spanish-language cycling advocacy website built with Astro + TinaCMS, migrated from Drupal 7.7. This is a citizen collective promoting cycling as sustainable transportation in Guayaquil, Ecuador.
+
+**Tech Stack:**
+- Astro 5.x with Titan Core theme
+- TinaCMS for content management (Spanish UI)
+- Tailwind CSS 4.x with custom theming
+- Netlify Forms for contact form
+- Deployed on Netlify
+
+## Development Commands
+
+### Essential Commands
+```bash
+# Install dependencies (uses pnpm)
+pnpm install
+
+# Development with TinaCMS admin UI
+pnpm run dev              # Runs on localhost:4321 with TinaCMS admin at /admin
+
+# Development without TinaCMS
+pnpm run dev:astro        # Faster dev server, no CMS
+
+# Production build
+pnpm run build            # Standard build for Netlify
+
+# Build with TinaCMS (if needed)
+pnpm run build:tina       # Builds TinaCMS admin + site
+
+# Preview production build
+pnpm run preview
+
+# Type checking
+pnpm run check
+
+# Code formatting
+pnpm run format
+```
+
+### Node Version
+- **Required:** Node 20.18.1 (specified in `.nvmrc`)
+- Managed via fnm: `fnm use`
+- Package manager: pnpm (not npm/yarn)
+
+## Architecture & Key Concepts
+
+### 1. Content Collections Structure
+
+The site uses Astro's content collections with **category slugs** (not names) in frontmatter:
+
+```typescript
+// src/content.config.ts defines 7 collections:
+- blog      // Main content (72 posts)
+- page      // Static pages (11 pages)
+- service   // Services section (4 items)
+- video     // Video gallery (4 items)
+- banner    // Homepage banners (2 items)
+- team      // Team members
+- legal     // Legal documents
+```
+
+**Critical:** Blog categories use **slugs** (lowercase) in markdown frontmatter:
+```yaml
+categories:
+  - "noticias"      # NOT "Noticias"
+  - "destacadas"    # NOT "Destacadas"
+```
+
+Category definitions with both name and slug are in `src/data/categories.ts` (13 Spanish cycling categories).
+
+### 2. TinaCMS Configuration
+
+TinaCMS provides a Spanish-language admin interface at `/admin` (in development):
+
+- **Configuration:** `tina/config.ts`
+- **Generated files:** `tina/__generated__/` (auto-generated, don't edit)
+- **Media upload root:** `public/uploads/`
+- **Collections:** All 5 content types with Spanish labels
+- **Authentication:** Requires `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` env vars for production
+
+**Note:** TinaCMS is optional for development. Use `pnpm run dev:astro` to skip CMS overhead.
+
+### 3. Image Path Conventions
+
+**Critical for builds:** All image references must use relative paths, and NO external URLs:
+
+```markdown
+# ✅ CORRECT - Relative path
+![Alt text](/uploads/wp-content/uploads/2012/07/image.jpg)
+
+# ❌ WRONG - Absolute URLs cause build failures
+![Alt text](http://guayaquilenbici.org/wp-content/uploads/2012/07/image.jpg)
+
+# ❌ WRONG - External URLs cause build failures
+![Alt text](http://www.example.com/image.jpg)
+```
+
+If you encounter absolute or external URLs in content, run:
+```bash
+node migrations/fix-image-urls.js
+```
+
+This script:
+- Converts guayaquilenbici.org URLs to relative paths
+- Removes all external image references (they don't exist locally)
+- Scans both blog and pages directories
+- Cleans up extra newlines
+
+### 4. Site Configuration & Branding
+
+**Main config:** `src/data/config.ts`
+```typescript
+export const siteConfig = {
+  companyName: 'Guayaquil en Bici',
+  siteUrl: 'https://guayaquilenbici.org',
+  Socials: { /* Spanish social media accounts */ }
+};
+
+export const SEO = {
+  SiteName: 'Guayaquil en Bici',
+  defaultDescription: 'Colectivo ciudadano que promueve el uso de la bicicleta...'
+};
+
+export const themeSetting = {
+  theme: 'zeus'  // One of 10 available themes
+};
+```
+
+**Logo:** `/public/logo-geb.png` - Used in header and as default OG image
+
+**Navigation:** `src/data/menu.ts` - Spanish menu with 6 main items + 13 child items
+
+### 5. Spanish Language & SEO
+
+The site is **Spanish-only** (Ecuador):
+
+- HTML `lang="es"` in `src/layouts/Layout.astro`
+- OpenGraph `og:locale="es_EC"`
+- All UI text, labels, and content in Spanish
+- Keywords focused on cycling/urban mobility in Ecuador
+
+**SEO Configuration:**
+- Comprehensive meta tags in Layout.astro
+- JSON-LD structured data (Organization schema)
+- Twitter Cards with @guayaquilenbici
+- Sitemap at `/sitemap-index.xml`
+- Robots.txt configured for `https://guayaquilenbici.org`
+
+### 6. Netlify Deployment
+
+**Configuration:** `netlify.toml`
+
+Key settings:
+- Build command: `pnpm run build`
+- Publish dir: `dist`
+- Node 20.18.1 required
+- Security headers (XSS protection, clickjacking prevention)
+- Cache headers for static assets (1 year)
+- Forms enabled with spam filtering
+
+**Redirects:** Managed via `public/_redirects` file (188 redirect rules from Drupal migration)
+
+**Environment Variables:**
+```bash
+PUBLIC_SITE_URL=https://guayaquilenbici.org  # Used by Astro
+NODE_VERSION=20.18.1                          # Node version
+```
+
+### 7. Content Migration from Drupal
+
+The `migrations/` folder contains scripts used for the Drupal 7.7 migration:
+
+- `export-drupal.js` - Exports data from Drupal Docker container
+- `convert-to-markdown.js` - Converts HTML to Markdown with proper Spanish encoding
+- `generate-redirects.js` - Creates Netlify redirects from URL aliases
+- `fix-image-urls.js` - Fixes absolute/external image URLs to relative paths
+- `analyze-menu.cjs` - Analyzes Drupal menu structure
+
+**Migration artifacts:** `migrations/data/` (JSON exports from Drupal - kept for reference)
+
+**Media files:** 740 files (120MB) in `public/uploads/wp-content/uploads/`
+
+## Common Patterns
+
+### Adding New Blog Posts
+
+1. Create markdown file in `src/content/blog/`
+2. Use category **slugs** (not names):
+   ```yaml
+   ---
+   title: "Post Title"
+   excerpt: "Brief description"
+   publishDate: "2025-01-01"
+   categories:
+     - "noticias"
+     - "locales"
+   tags:
+     - "tag1"
+   featuredImage: "/uploads/path/to/image.jpg"
+   ---
+   ```
+
+### Modifying Site Branding
+
+1. Update `src/data/config.ts` for company info
+2. Replace `/public/logo-geb.png` for logo
+3. Update `src/data/menu.ts` for navigation
+4. Modify `src/components/Logo.astro` if logo dimensions change
+
+### Adding Pages
+
+Create in `src/content/pages/` or `src/pages/`:
+- Content-managed pages → `src/content/pages/` (editable via TinaCMS)
+- Custom Astro pages → `src/pages/` (for special functionality)
+
+Example: Contact form at `src/pages/contactanos/index.astro` (custom page with Netlify Forms)
+
+### Working with Forms
+
+Contact form uses **Netlify Forms**:
+- Form component: `src/components/forms/ContactoForm.astro`
+- Spanish labels and validation
+- Honeypot spam protection
+- AJAX submission with success/error handling
+
+To add new forms:
+1. Add `data-netlify="true"` attribute
+2. Include hidden `<input type="hidden" name="form-name" value="form-name" />`
+3. Add honeypot field for spam protection
+4. Form submissions appear in Netlify dashboard
+
+## Critical Build Requirements
+
+1. **No absolute image URLs** - Use relative paths starting with `/uploads/`
+2. **No external image URLs** - All images must be local (run fix-image-urls.js to clean)
+3. **Category slugs** - Always use lowercase slugs in frontmatter
+4. **UTF-8 encoding** - Ensure proper encoding for Spanish characters
+5. **Node 20.18.1** - Required for successful builds
+6. **pnpm** - Do not use npm/yarn (causes dependency issues)
+
+## Deployment
+
+Deployment is automatic via Netlify when pushing to `main` branch:
+
+1. Push to GitHub: `git push origin main`
+2. Netlify auto-detects `netlify.toml` configuration
+3. Build runs: `pnpm run build`
+4. Site deploys to configured domain
+
+**Manual deployment:**
+```bash
+# Build locally to test
+pnpm run build
+
+# Preview build
+pnpm run preview
+```
+
+## Troubleshooting Build Errors
+
+**"Failed to parse image reference"**
+- Caused by absolute URLs or external image URLs in markdown
+- Fix: Run `node migrations/fix-image-urls.js`
+- This removes all external images and converts local absolute URLs to relative
+
+**"Invalid enum value" for categories**
+- Using category names instead of slugs
+- Fix: Use lowercase slugs from `src/data/categories.ts`
+
+**"Sharp not found"**
+- Missing image optimization dependency
+- Fix: `pnpm add sharp`
+
+**TinaCMS build errors**
+- Don't need TinaCMS build for Netlify
+- Use `pnpm run build` (not `build:tina`)
+- TinaCMS admin works via Tina Cloud in production
