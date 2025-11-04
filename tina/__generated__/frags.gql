@@ -1,0 +1,59 @@
+fragment BlogParts on Blog {
+  __typename
+  title
+  excerpt
+  featuredImage
+  publishDate
+  publish
+  categories
+  tags
+  body
+  seo {
+    __typename
+    title
+    description
+    image
+  }
+}
+
+fragment PageParts on Page {
+  __typename
+  title
+  excerpt
+  publish
+  body
+  seo {
+    __typename
+    title
+    description
+  }
+}
+
+fragment ServiceParts on Service {
+  __typename
+  title
+  excerpt
+  icon
+  link
+  order
+  body
+}
+
+fragment VideoParts on Video {
+  __typename
+  title
+  videoUrl
+  category
+  thumbnail
+  body
+}
+
+fragment BannerParts on Banner {
+  __typename
+  title
+  image
+  link
+  order
+  active
+  body
+}

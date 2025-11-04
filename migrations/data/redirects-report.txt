@@ -1,0 +1,225 @@
+# Netlify Redirects - Generated from Drupal URL aliases
+# https://docs.netlify.com/routing/redirects/
+
+# Old Drupal URLs to new Astro URLs
+
+/node/130 /que-hacemos 301
+/node/144 /blog/sancionan-a-un-ciclista 301
+/2010/07/17/sancionan-a-un-ciclista /blog/sancionan-a-un-ciclista 301
+/node/145 /blog/ahora-si-ciclovias 301
+/2010/07/22/ahora-si-ciclovias /blog/ahora-si-ciclovias 301
+/node/146 /blog/por-fiestas-de-fundacion-se-realizo-competencia 301
+/2010/07/25/por-fiestas-de-fundacion-se-realizo-competencia /blog/por-fiestas-de-fundacion-se-realizo-competencia 301
+/node/147 /blog/guayaquilena-en-europa-usa-la-bici-para-trabajar 301
+/2010/07/25/guayaquilena-en-europa-usa-la-bici-para-trabajar /blog/guayaquilena-en-europa-usa-la-bici-para-trabajar 301
+/node/148 /blog/hasta-los-principes-usan-la-bici-para-movilizarse 301
+/2010/07/25/hasta-los-principes-usan-la-bici-para-movilizarse /blog/hasta-los-principes-usan-la-bici-para-movilizarse 301
+/node/149 /blog/gesto-de-gratitud-y-aprecio-para-ecuador-sanchez 301
+/2010/07/26/gesto-de-gratitud-y-aprecio-para-ecuador-sanchez /blog/gesto-de-gratitud-y-aprecio-para-ecuador-sanchez 301
+/node/150 /blog/portoviejo-tambien-se-mueve-en-bici 301
+/2010/07/30/portoviejo-tambien-se-mueve-en-bici /blog/portoviejo-tambien-se-mueve-en-bici 301
+/node/151 /blog/guayaquilenos-en-bici 301
+/2010/07/30/guayaquilenos-en-bici /blog/guayaquilenos-en-bici 301
+/node/152 /blog/sirven-los-ciclopaseos 301
+/2010/08/01/sirven-los-ciclopaseos /blog/sirven-los-ciclopaseos 301
+/node/153 /blog/sistema-publico-de-alquiler-bicicletas 301
+/2010/08/02/sistema-publico-de-alquiler-bicicletas /blog/sistema-publico-de-alquiler-bicicletas 301
+/node/154 /blog/barcelona-intensifica-la-presion-contra-los-ciclistas-infractores-en-verano 301
+/2010/08/03/barcelona-intensifica-la-presion-contra-los-ciclistas-infractores-en-verano /blog/barcelona-intensifica-la-presion-contra-los-ciclistas-infractores-en-verano 301
+/node/155 /blog/el-retorno 301
+/2010/08/12/el-retorno /blog/el-retorno 301
+/node/156 /blog/ciclopaseo-benefico-al-albergue-maria-reina 301
+/2010/08/15/ciclopaseo-benefico-al-albergue-maria-reina /blog/ciclopaseo-benefico-al-albergue-maria-reina 301
+/node/157 /blog/el-exito-de-sevill 301
+/2010/08/16/el-exito-de-sevill /blog/el-exito-de-sevill 301
+/node/158 /blog/que-esperas-para-usar-la-bici 301
+/2010/08/17/que-esperas-para-usar-la-bici /blog/que-esperas-para-usar-la-bici 301
+/node/159 /blog/competencia-mtb-2da-valida-provincial 301
+/2010/08/23/competencia-mtb-2da-valida-provincial /blog/competencia-mtb-2da-valida-provincial 301
+/node/160 /blog/al-trabajo-en-bici 301
+/2010/08/23/al-trabajo-en-bici /blog/al-trabajo-en-bici 301
+/node/162 /blog/en-bici-conocer-guayaquil 301
+/2010/08/30/en-bici-conocer-guayaquil /blog/en-bici-conocer-guayaquil 301
+/node/163 /blog/la-ley-ecuatoriana-respecto-a-las-bicis 301
+/2010/09/02/la-ley-ecuatoriana-respecto-a-las-bicis /blog/la-ley-ecuatoriana-respecto-a-las-bicis 301
+/node/164 /blog/ley-ecuatoriana-respecto-a-las-bicis-2da-parte 301
+/2010/09/03/ley-ecuatoriana-respecto-a-las-bicis-2da-parte /blog/ley-ecuatoriana-respecto-a-las-bicis-2da-parte 301
+/node/165 /blog/la-ley-ecuatoriana-respecto-a-las-bicis-3ra-parte 301
+/2010/09/04/la-ley-ecuatoriana-respecto-a-las-bicis-3ra-parte /blog/la-ley-ecuatoriana-respecto-a-las-bicis-3ra-parte 301
+/node/166 /blog/competencia-de-ciclismo-juegos-special 301
+/2010/09/04/competencia-de-ciclismo-juegos-special /blog/competencia-de-ciclismo-juegos-special 301
+/node/167 /blog/bicicleta-personalizada-en-guayaquil 301
+/2010/09/06/bicicleta-personalizada-en-guayaquil /blog/bicicleta-personalizada-en-guayaquil 301
+/node/168 /blog/guayaquil-de-punta-a-punta-en-bicicleta 301
+/2010/09/14/guayaquil-de-punta-a-punta-en-bicicleta /blog/guayaquil-de-punta-a-punta-en-bicicleta 301
+/node/169 /blog/como-reducir-peso-usando-una-bici 301
+/2010/10/13/como-reducir-peso-usando-una-bici /blog/como-reducir-peso-usando-una-bici 301
+/node/170 /blog/solidaridad-con-la-masa-critica-de-sao-paulo 301
+/2011/02/27/solidaridad-con-la-masa-critica-de-sao-paulo /blog/solidaridad-con-la-masa-critica-de-sao-paulo 301
+/node/171 /blog/grupos-ciclistas-estuvieron-presentes-en-la-hora-del-planeta 301
+/2011/03/27/grupos-ciclistas-estuvieron-presentes-en-la-hora-del-planeta /blog/grupos-ciclistas-estuvieron-presentes-en-la-hora-del-planeta 301
+/node/172 /blog/rally-guayaquil-vinces 301
+/2011/03/27/rally-guayaquil-vinces /blog/rally-guayaquil-vinces 301
+/node/173 /blog/se-realizo-1era-valida-de-mtb-en-el-canton-gral-villamil-playas 301
+/2011/04/10/se-realizo-1era-valida-de-mtb-en-el-canton-gral-villamil-playas /blog/se-realizo-1era-valida-de-mtb-en-el-canton-gral-villamil-playas 301
+/node/174 /blog/sambo-para-peatones-corredores-ciclistas-y-otras-yerbas-mas 301
+/2011/05/15/sambo-para-peatones-corredores-ciclistas-y-otras-yerbas-mas /blog/sambo-para-peatones-corredores-ciclistas-y-otras-yerbas-mas 301
+/node/175 /blog/resumen-del-foro-organizado-por-diario-expreso 301
+/2011/06/01/resumen-del-foro-organizado-por-diario-expreso /blog/resumen-del-foro-organizado-por-diario-expreso 301
+/node/176 /blog/llamado-a-la-comunidad-de-usuarios-de-ciclovias-en-el-mundo 301
+/2011/09/14/llamado-a-la-comunidad-de-usuarios-de-ciclovias-en-el-mundo /blog/llamado-a-la-comunidad-de-usuarios-de-ciclovias-en-el-mundo 301
+/node/177 /blog/dia-mundial-sin-auto-2011 301
+/2011/09/27/dia-mundial-sin-auto-2011 /blog/dia-mundial-sin-auto-2011 301
+/node/178 /blog/la-ciclovia-guayaquil-parque-el-lago-un-adelanto 301
+/2011/10/13/la-ciclovia-guayaquil-parque-el-lago-un-adelanto /blog/la-ciclovia-guayaquil-parque-el-lago-un-adelanto 301
+/node/179 /blog/nuestra-huella-en-el-507 301
+/2011/10/24/nuestra-huella-en-el-507 /blog/nuestra-huella-en-el-507 301
+/node/180 /blog/jugando-a-contar-los-carros 301
+/2011/10/28/jugando-a-contar-los-carros /blog/jugando-a-contar-los-carros 301
+/node/181 /blog/andar-en-bici-es-tan-facil-que-se-lo-puede-hacer-hasta-en-tacones 301
+/2012/02/28/andar-en-bici-es-tan-facil-que-se-lo-puede-hacer-hasta-en-tacones /blog/andar-en-bici-es-tan-facil-que-se-lo-puede-hacer-hasta-en-tacones 301
+/node/182 /blog/pronunciamiento-por-el-dia-mundial-de-la-bicicleta 301
+/2012/04/19/pronunciamiento-por-el-dia-mundial-de-la-bicicleta /blog/pronunciamiento-por-el-dia-mundial-de-la-bicicleta 301
+/node/183 /blog/pronunciamiento-de-movimiento-ciclistico-respecto-a-reduccion-de-bici-ruta 301
+/2012/06/22/pronunciamiento-de-movimiento-ciclistico-respecto-a-reduccion-de-bici-ruta /blog/pronunciamiento-de-movimiento-ciclistico-respecto-a-reduccion-de-bici-ruta 301
+/node/184 /blog/que-es-la-masa-critica 301
+/2012/06/26/que-es-la-masa-critica /blog/que-es-la-masa-critica 301
+/node/185 /blog/descenso-del-507 301
+/2012/06/26/descenso-del-507 /blog/descenso-del-507 301
+/node/186 /blog/1era-biciruta-recreativa 301
+/2012/06/27/1era-biciruta-recreativa /blog/1era-biciruta-recreativa 301
+/node/187 /blog/riendome-del-trafico 301
+/2012/06/28/riendome-del-trafico /blog/riendome-del-trafico 301
+/node/188 /blog/pedaleando-por-las-huecas 301
+/2012/07/08/pedaleando-por-las-huecas /blog/pedaleando-por-las-huecas 301
+/node/189 /blog/que-opinas-sobre-la-bici-ruta-recreativa 301
+/2012/07/09/que-opinas-sobre-la-bici-ruta-recreativa /blog/que-opinas-sobre-la-bici-ruta-recreativa 301
+/node/190 /blog/una-noche-en-el-507 301
+/2012/07/12/una-noche-en-el-507 /blog/una-noche-en-el-507 301
+/node/191 /que-bicicleta-es-la-mejor-para-mi 301
+/informacion-ciclista/que-bicicleta-es-la-mejor-para-mi /que-bicicleta-es-la-mejor-para-mi 301
+/node/192 /blog/555-kilometros-de-aventura-en-bici 301
+/2012/07/24/555-kilometros-de-aventura-en-bici /blog/555-kilometros-de-aventura-en-bici 301
+/node/193 /blog/el-casco-me-salvo-la-vida 301
+/2012/07/26/el-casco-me-salvo-la-vida /blog/el-casco-me-salvo-la-vida 301
+/node/194 /blog/cronica-de-una-llanta-baja 301
+/2012/08/01/cronica-de-una-llanta-baja /blog/cronica-de-una-llanta-baja 301
+/node/195 /blog/los-famosos-65km 301
+/2012/08/07/los-famosos-65km /blog/los-famosos-65km 301
+/node/196 /blog/buenos-vientos-desde-el-municipio 301
+/2012/08/09/buenos-vientos-desde-el-municipio /blog/buenos-vientos-desde-el-municipio 301
+/node/197 /blog/trafico-ja-yo-ando-en-bici 301
+/2012/08/19/trafico-ja-yo-ando-en-bici /blog/trafico-ja-yo-ando-en-bici 301
+/node/198 /blog/pedaleando-al-trabajo-juanjo 301
+/2012/08/27/pedaleando-al-trabajo-juanjo /blog/pedaleando-al-trabajo-juanjo 301
+/node/199 /blog/pedaleando-al-trabajo-marlon 301
+/2012/09/07/pedaleando-al-trabajo-marlon /blog/pedaleando-al-trabajo-marlon 301
+/node/200 /blog/pedaleando-al-trabajo-miguel-ulloa 301
+/2012/09/18/pedaleando-al-trabajo-miguel-ulloa /blog/pedaleando-al-trabajo-miguel-ulloa 301
+/node/201 /blog/en-los-zapatos-de-un-peaton-con-ojos-de-ciclista-y-conocimiento-de-conductor 301
+/2012/11/04/en-los-zapatos-de-un-peaton-con-ojos-de-ciclista-y-conocimiento-de-conductor /blog/en-los-zapatos-de-un-peaton-con-ojos-de-ciclista-y-conocimiento-de-conductor 301
+/node/202 /blog/rodada-de-altura-2013 301
+/2013/03/14/rodada-de-altura-2013 /blog/rodada-de-altura-2013 301
+/node/203 /blog/cuando-se-debe-realizar-el-mantenimiento-de-tu-bici 301
+/2013/04/10/cuando-se-debe-realizar-el-mantenimiento-de-tu-bici /blog/cuando-se-debe-realizar-el-mantenimiento-de-tu-bici 301
+/node/204 /blog/cuanto-dinero-representa-andar-en-bici 301
+/2013/04/11/cuanto-dinero-representa-andar-en-bici /blog/cuanto-dinero-representa-andar-en-bici 301
+/node/205 /blog/reciclando-una-bici 301
+/2013/05/12/reciclando-una-bici /blog/reciclando-una-bici 301
+/node/206 /blog/impulsando-un-mejor-estilo-de-vida-desde-la-empresa 301
+/2013/05/20/impulsando-un-mejor-estilo-de-vida-desde-la-empresa /blog/impulsando-un-mejor-estilo-de-vida-desde-la-empresa 301
+/node/207 /blog/conociendo-a-los-policiclos 301
+/2013/06/17/conociendo-a-los-policiclos /blog/conociendo-a-los-policiclos 301
+/node/208 /blog/muchas-gracias 301
+/2014/03/25/muchas-gracias /blog/muchas-gracias 301
+/node/209 /blog/resena-de-la-rodada-de-altura-2014 301
+/2014/04/09/resena-de-la-rodada-de-altura-2014 /blog/resena-de-la-rodada-de-altura-2014 301
+/node/210 /blog/discurso-leido-al-marco-de-la-3era-rodada-de-altura-en-tacos-y-en-bicicleta-por-una-ciudad-menos-violenta 301
+/2014/04/08/discurso-leido-al-marco-de-la-3era-rodada-de-altura-en-tacos-y-en-bicicleta-por-una-ciudad-menos-violenta /blog/discurso-leido-al-marco-de-la-3era-rodada-de-altura-en-tacos-y-en-bicicleta-por-una-ciudad-menos-violenta 301
+/node/211 /blog/manifiesto-ciudadano-por-el-derecho-a-circular-y-pedalear-en-condiciones-dignas 301
+/2014/04/08/manifiesto-ciudadano-por-el-derecho-a-circular-y-pedalear-en-condiciones-dignas /blog/manifiesto-ciudadano-por-el-derecho-a-circular-y-pedalear-en-condiciones-dignas 301
+/node/212 /blog/campana-la-bicicleta-como-derecho-humano 301
+/2014/04/19/campana-la-bicicleta-como-derecho-humano /blog/campana-la-bicicleta-como-derecho-humano 301
+/node/213 /blog/resultados-de-opinion-ciudadana-sobre-la-convivencia-vial-en-guayaquil 301
+/2014/04/19/resultados-de-opinion-ciudadana-sobre-la-convivencia-vial-en-guayaquil /blog/resultados-de-opinion-ciudadana-sobre-la-convivencia-vial-en-guayaquil 301
+/node/214 /blog/exposicion-fotografica-la-bicicleta-como-derecho-humano 301
+/2014/05/01/exposicion-fotografica-la-bicicleta-como-derecho-humano /blog/exposicion-fotografica-la-bicicleta-como-derecho-humano 301
+/node/215 /que-hacemos 301
+/node/216 /auspiciamos-a 301
+/node/217 /apoyanos 301
+/node/218 /contactanos 301
+/node/219 /masa-critica 301
+/node/221 /dia-mundial-sin-auto 301
+/masa-critica/dia-mundial-sin-auto /dia-mundial-sin-auto 301
+/node/223 /clubes-y-grupos-de-ciclismo 301
+/informacion-ciclista/clubes-y-grupos-de-ciclismo /clubes-y-grupos-de-ciclismo 301
+/node/226 /alley-cat-guayaquil 301
+/actividades/alley-cat-guayaquil /alley-cat-guayaquil 301
+/node/229 /semana-movilidad-guayaca 301
+/actividades/semana-movilidad-guayaca /semana-movilidad-guayaca 301
+/node/230 / 301
+/content/semana-de-movilidad / 301
+/node/231 /#videos 301
+/content/circulando-bici-con-seguridad /#videos 301
+/node/232 /#videos 301
+/content/tecnica-subir-lomas-con-bici-y-obstaculos /#videos 301
+/node/233 /#videos 301
+/content/como-subir-y-bajar-de-bici /#videos 301
+/node/234 /#videos 301
+/content/cambio-de-tubo-de-bicicleta /#videos 301
+/node/236 /contactanos 301
+/content/reserva-tu-bicicleta-rodada-de-altura-2015 /contactanos 301
+/node/237 /contactanos 301
+/content/reservas-agotadas /contactanos 301
+/node/239 / 301
+/content/desde-bici-proponemos-ciudades-todos / 301
+/node/244 /contactanos 301
+/content/formulario-de-inscripcion-de-equipos-alleycat-2015 /contactanos 301
+/node/245 /contactanos 301
+/content/inscripciones-alleycat-2015 /contactanos 301
+/node/59 /tiendas-talleres-guayaquil 301
+/informacion-ciclista/tiendas-talleres-guayaquil /tiendas-talleres-guayaquil 301
+
+# Manual redirects for important pages
+/node/222 /contactanos 301  # Como formar parte del colectivo
+/node/240 /contactanos 301  # Como puedo ser parte del colectivo
+/node/57 /masa-critica 301  # Masa critica de Guayaquil
+/node/56 /blog 301  # Conociendo los policiclos
+/node/241 / 301  # Tienda producto (jarro GEB)
+/node/224 /blog 301  # Pedaleada isla santay
+/node/228 /alley-cat-guayaquil 301  # Primer gato de independencia
+/node/235 /blog 301  # Prestamo de bicicletas
+/node/238 /blog 301  # Rodada de altura 2015
+/node/243 /blog 301  # Encuesta diagnostico
+
+# Blog posts with date prefixes in alias
+/blog/2014/07/01/de-una-ciudad-turistica-una-ciudad-con-movilidad-amigable /blog 301
+/blog/2015/05/20/las-preguntas-que-olvido-ant /blog 301
+
+
+# Homepage
+/ /index.html 200
+
+# Blog main page
+/blog /blog/index.html 200
+
+# Catch-all for old Drupal paths
+/node/* /404 404
+
+# Catch-all 404
+/* /404 404
+
+# URLs that could not be mapped:
+# Not found: /node/143 (2014/04/19/resultados-de-la-encuesta-sobre-uso-de-la-bicicleta-en-la-rodada-de-altura) -> slug: resultados-de-la-encuesta-sobre-uso-de-la-bicicleta-en-la-rodada-de-altura
+# Not found: /node/222 (content/¿cómo-formar-parte-de-nuestro-colectivo) -> slug: ¿cómo-formar-parte-de-nuestro-colectivo
+# Not found: /node/224 (content/pedaleada-isla-santay) -> slug: pedaleada-isla-santay
+# Not found: /node/225 (blog/2014/07/01/de-una-ciudad-turistica-una-ciudad-con-movilidad-amigable) -> slug: 2014/07/01/de-una-ciudad-turistica-una-ciudad-con-movilidad-amigable
+# Not found: /node/228 (content/primer-gato-de-independencia-0) -> slug: primer-gato-de-independencia-0
+# Not found: /node/235 (content/prestamo-de-bicicletas-rodada-de-altura) -> slug: prestamo-de-bicicletas-rodada-de-altura
+# Not found: /node/238 (content/rodada-de-altura-2015) -> slug: rodada-de-altura-2015
+# Not found: /node/240 (como-puedo-ser-parte-del-colectivo) -> slug: como-puedo-ser-parte-del-colectivo
+# Not found: /node/241 (tienda/producto/jarro-geb) -> slug: jarro-geb
+# Not found: /node/242 (blog/2015/05/20/las-preguntas-que-olvido-ant) -> slug: 2015/05/20/las-preguntas-que-olvido-ant
+# Not found: /node/243 (content/encuesta-diagnostico-de-movilidad-previo-al-lanzamiento-de-escuela-de-bici) -> slug: encuesta-diagnostico-de-movilidad-previo-al-lanzamiento-de-escuela-de-bici
+# Not found: /node/56 (content/conociendo-los-policiclos) -> slug: conociendo-los-policiclos
+# Not found: /node/57 (content/masa-critica-de-guayaquil) -> slug: masa-critica-de-guayaquil
