@@ -20,7 +20,7 @@ Junto con el lanzamiento de la campaña "[La bicicleta como un Derecho Humano](h
 
 Realizamos una corta entrevista a Alberto donde nos revela detalles de su trabajo y su opinión respecto a la campaña:
 
-[\[\[{"type":"media","view\_mode":"media\_large","fid":"318","attributes":{"class":"media-image size-medium wp-image-1017","typeof":"foaf:Image","style":"","width":"226","height":"300","alt":"Alberto Hidalgo"}}\]\]](/guayaquilenbici/uploads/wp-content/uploads/2014/05/Alberto-Hidalgo-Fotografia2.jpg) Alberto Hidalgo \\t
+![Alberto Hidalgo](/uploads/wp-content/uploads/2014/05/Alberto-Hidalgo-Fotografia2-226x300_0.jpg) Alberto Hidalgo \
 
 **1.- Nombres completos**
 

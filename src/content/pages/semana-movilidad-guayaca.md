@@ -14,9 +14,9 @@ Dicha iniciativa inició su difusión el 17 de Abril del 2014 y tendrá énfasis
 
 Esta propuesta está respaldada por el Comité Permanente para la Defensa de los Derechos Humanos en Guayaquil (CDH). La campaña para la mencionada semana de movilidad tiene como objetivo principal construir un Guayaquil más humano a través de los siguientes objetivos específicos:
 
-\\t1.  Ejercer nuestros derechos a través de la bicicleta.
-\\t2.  Alcanzar una movilidad inclusiva orientada al ciudadano.
-\\t3.  Establecer espacios públicos de calidad que incentiven a la convivencia ciudadana.
+\1.  Ejercer nuestros derechos a través de la bicicleta.
+\2.  Alcanzar una movilidad inclusiva orientada al ciudadano.
+\3.  Establecer espacios públicos de calidad que incentiven a la convivencia ciudadana.
 
 A continuación se incluye el calendario de actividades que se realizarán durante esta semana.
 
@@ -24,7 +24,7 @@ A continuación se incluye el calendario de actividades que se realizarán duran
 
 Para cada día se han definido puntos de encuentro/partida y horarios especficos, anotalo en tu agenda y no te pierdas ni uno solo de los dias:
 
-\\t \\t \\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t\\t \\t\\t\\t \\t\\t\\t \\t\\t \\t
+\ \ \  \ \   \ \   \ \   \ \   \ \   \ \   \ \   \ \   \ \  \
 
 **Fecha**
 

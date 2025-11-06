@@ -44,27 +44,13 @@ Son estos “detalles” que me motivan a acercarme al Gobierno Descentralizado 
 A inicios del año 2000, Otavalo empieza a tener cambios en su imagen urbanística en base a estudios y proyecciones, también de experiencia, por lo que se han ido ejecutando proyectos de importancia de la comunidad, y es en particular a partir del 2001 el tema de la movilidad y transporte sustentable toma un gran interés al realizarse la ciclovía urbana que tiene por objetivo promover la circulación sustentable del ciudadano que dentro de la ciudad cuenta con 14 km de la ciclovía y que se conforman por medio de circuitos entre las calles: sentido Norte-sur (longitudinal) son: Luis Alberto de la Torre, Bolívar, Sucre y Vía de Circunvalación. En sentido oriente-occidente (transversal) las calles: Olmedo, García Moreno, Montalvo, Abdón Calderón, Quito, Jacinto Collahuazo y Juan de Albarrací. Es la Jefatura de Tránsito, de Transporte y Movilidad del Gobierno Descentralizado Municipal de Otavalo quien está a cargo de la administración y cuidado de la ciclovía.
 
 Parte fundamental del aporte de la ciclovía que ha generado en la ciudad es:
+    - Tránsito restringido en el casco urbano, de manera que el conductor sabe donde debe circular.
 
-\\t-   \\t\\t
-    
-    Tránsito restringido en el casco urbano, de manera que el conductor sabe donde debe circular.
-    
-    \\t
-\\t-   \\t\\t
-    
-    Iniciativa ciudadana para el uso de la bicicleta como medio de transporte. El Club Bicipasión realiza ciclopaseos urbanos nocturnos.
-    
-    \\t
-\\t-   \\t\\t
-    
-    Desarrollo de Ciclorutas Rurales, organizadas por el Gobierno Descentralizado de Otavalo y que se realizan los domingos en la mañana.
-    
-    \\t
-\\t-   \\t\\t
-    
-    Las operadoras de turismo también se están involucrando en el desarrollo de la movilidad, a través del alquiler de bicicletas para paseos tanto urbanos como rurales.
-    
-    \\t
+-   Iniciativa ciudadana para el uso de la bicicleta como medio de transporte. El Club Bicipasión realiza ciclopaseos urbanos nocturnos.
+
+    - Desarrollo de Ciclorutas Rurales, organizadas por el Gobierno Descentralizado de Otavalo y que se realizan los domingos en la mañana.
+
+    - Las operadoras de turismo también se están involucrando en el desarrollo de la movilidad, a través del alquiler de bicicletas para paseos tanto urbanos como rurales.
 
 Para la implementación de la Ciclovía fueron socializados 44000 habitantes de la zona urbana y 65000 habitantes de la zona rural; a través del concepto de movilidad sostenible – sustentable regula campañas permanentes del uso de la bicicleta: como medio de distracción, relajación, disipación, y salud. La campaña se ha apoyado en la visita a escuelas, colegios, a grupos de adultos mayores y pautajes en televisión, sin embargo es importante la socialización continua como aporte para que ciudadanos, ciclistas y peatones puedan transitar en un ambiente armónico.
 

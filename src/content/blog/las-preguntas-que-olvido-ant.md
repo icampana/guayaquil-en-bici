@@ -18,40 +18,36 @@ Pese al esfuerzo de la ANT por mejorar los cuestionarios, nos queda debiendo res
 
 La ANT ha incluido preguntas respecto a prioridad de paso en intersecciones entre peatones y carro, entre carros pero no respecto a ciclistas, esto es muy importante porque la mayoría de conductores de vehículos a motor no sabe o no es consciente de que a los ciclistas se nos considera un vehículo más con pleno derecho de uso de vía y que además tenemos preferencia sobre sus vehículos a motor.
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"450","attributes":{"alt":"","class":"media-image","height":"140","width":"606"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.24.01.png)
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"451","attributes":{"alt":"","class":"media-image","height":"156","width":"594"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.24.21.png)
 
 2.- ¿A qué distancia se debe rebasar a un ciclista?, pregunta crucial y cuya respuesta debe ser: A una distancia mínima de 1.5metros, una distancia menor podría generar complicaciones en la estabilidad y seguridad del ciclista provocando su caída y lesiones que podrían poner en riesgo su vida. La ANT sí incluyó temas referentes a distancias mínimas pero entre carros solamente
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"458","attributes":{"alt":"","class":"media-image","height":"329","width":"329"}}\]\]
+![](/uploads/respete-al-ciclista.jpg)
 
-3\. Las preguntas que sí incluyó la ANT sobre bicicletas
+3.- Las preguntas que sí incluyó la ANT sobre bicicletas
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"461","attributes":{"alt":"","class":"media-image","height":"104","width":"592"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_15.43.46_0.png)
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"453","attributes":{"alt":"","class":"media-image","height":"107","width":"594"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.24.59.png)
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"452","attributes":{"alt":"","class":"media-image","height":"118","width":"603"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.25.29.png)
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"454","attributes":{"alt":"","class":"media-image","height":"115","width":"593"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.25.36.png)
 
 En la #119 y #165 además se debería recalcar que el ciclista tiene la preferencia.
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"455","attributes":{"alt":"","class":"media-image","height":"109","width":"595"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.26.00.png)
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"456","attributes":{"alt":"","class":"media-image","height":"120","width":"597"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_12.26.56.png)
 
 La ANT también debería incluir preguntas sobre las sanciones aplicables al irrespeto de la señales relacionadas con los ciclistas así como lo ha hecho para el resto de conductores.
 
-\[\[{"type":"media","view\_mode":"media\_original","fid":"459","attributes":{"alt":"","class":"media-image","height":"173","width":"593"}}\]\]
+![](/uploads/captura_de_pantalla_2015-05-20_a_las_15.45.44.png)
 
 Probablemente hay más cosas que se puedan mejorar en los cuestionarios de obtención de licencias que hagan que nuestro andar por las vías sea más seguro, les invitamos entonces a hacer los aportes que crean convenientes al respecto.
 
-\\t
-
 Pueden revisar los cuestionarios completos acá -> [https://goo.gl/JiYjgo](https://goo.gl/JiYjgo)
-
-\\t
 
 Y hacer las prácticas en línea acá -> [http://goo.gl/C39AkL](http://goo.gl/C39AkL)

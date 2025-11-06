@@ -17,4 +17,4 @@ Se realizó el 2do "Desafío 50k - Guayaquil de punta a punta";  hubieron cerca
 
 ## [Reto Guayaquil 50k](http://www.everytrail.com/view_trip.php?trip_id=805980)
 
-\[\[{"type":"media","view\_mode":"media\_large","fid":"136","attributes":{"class":"media-image","typeof":"foaf:Image","height":"300","width":"400","style":""}}\]\] EveryTrail - Find [trail maps for California](http://www.everytrail.com/best/hiking-california) and beyond \[salbumphotos=13,max,3,n,n,uploaded\_timestamp,center,\]
+![]() EveryTrail - Find [trail maps for California](http://www.everytrail.com/best/hiking-california) and beyond \[salbumphotos=13,max,3,n,n,uploaded\_timestamp,center,\]
