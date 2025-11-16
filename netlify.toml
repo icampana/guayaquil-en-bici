@@ -1,8 +1,8 @@
 # Netlify configuration for Guayaquil en Bici
 
 [build]
-  # Build command
-  command = "pnpm run build"
+  # Build command (includes TinaCMS admin build)
+  command = "pnpm run build:tina"
 
   # Output directory
   publish = "dist"
@@ -52,13 +52,13 @@
 
 # Deploy contexts
 [context.production]
-  command = "pnpm run build"
+  command = "pnpm run build:tina"
 
 [context.deploy-preview]
-  command = "pnpm run build"
+  command = "pnpm run build:tina"
 
 [context.branch-deploy]
-  command = "pnpm run build"
+  command = "pnpm run build:tina"
 
 # Dev server
 [dev]
