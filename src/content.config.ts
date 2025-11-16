@@ -105,4 +105,65 @@ const banner = defineCollection({
     }),
 });
 
-export const collections = { blog, team, legal, page, service, video, banner };
+const feature = defineCollection({
+    loader: glob({ base: './src/content/features', pattern: '**/*.md' }),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        icon: z.string(), // Icon name as string (e.g., 'users', 'calendar', 'shield')
+        order: z.number().default(0),
+        active: z.boolean().default(true),
+    }),
+});
+
+const homepage = defineCollection({
+    loader: glob({ base: './src/content/homepage', pattern: '**/*.md' }),
+    schema: z.object({
+        title: z.string(),
+        hero: z.object({
+            heroTitle: z.string(),
+            heroDescription: z.string(),
+            heroImage: z.string().optional(),
+            heroOverlayOpacity: z.number().default(0.3),
+            heroButton1Text: z.string(),
+            heroButton1Link: z.string(),
+            heroButton2Text: z.string(),
+            heroButton2Link: z.string(),
+        }),
+        features: z.object({
+            featuresEyebrow: z.string(),
+            featuresTitle: z.string(),
+            featuresDescription: z.string(),
+            featuresButtonText: z.string(),
+            featuresButtonLink: z.string(),
+        }),
+        mainCta: z.object({
+            mainCtaEyebrow: z.string(),
+            mainCtaTitle: z.string(),
+            mainCtaDescription: z.string(),
+            mainCtaButtonText: z.string(),
+            mainCtaButtonLink: z.string(),
+        }),
+        footerCta: z.object({
+            footerCtaEyebrow: z.string(),
+            footerCtaTitle: z.string(),
+            footerCtaDescription: z.string(),
+            footerCtaButtonText: z.string(),
+            footerCtaButtonLink: z.string(),
+        }),
+        recentPosts: z.object({
+            recentPostsEyebrow: z.string(),
+            recentPostsTitle: z.string(),
+            recentPostsDescription: z.string(),
+            recentPostsButtonText: z.string(),
+            recentPostsButtonLink: z.string(),
+            recentPostsCount: z.number().default(6),
+        }),
+        seo: z.object({
+            seoTitle: z.string(),
+            seoDescription: z.string(),
+        }),
+    }),
+});
+
+export const collections = { blog, team, legal, page, service, video, banner, feature, homepage };
