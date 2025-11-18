@@ -57,3 +57,68 @@ fragment BannerParts on Banner {
   active
   body
 }
+
+fragment FeatureParts on Feature {
+  __typename
+  title
+  description
+  icon
+  order
+  active
+  body
+}
+
+fragment HomepageParts on Homepage {
+  __typename
+  title
+  hero {
+    __typename
+    heroTitle
+    heroDescription
+    heroImage
+    heroOverlayOpacity
+    heroButton1Text
+    heroButton1Link
+    heroButton2Text
+    heroButton2Link
+  }
+  features {
+    __typename
+    featuresEyebrow
+    featuresTitle
+    featuresDescription
+    featuresButtonText
+    featuresButtonLink
+  }
+  mainCta {
+    __typename
+    mainCtaEyebrow
+    mainCtaTitle
+    mainCtaDescription
+    mainCtaButtonText
+    mainCtaButtonLink
+  }
+  footerCta {
+    __typename
+    footerCtaEyebrow
+    footerCtaTitle
+    footerCtaDescription
+    footerCtaButtonText
+    footerCtaButtonLink
+  }
+  recentPosts {
+    __typename
+    recentPostsEyebrow
+    recentPostsTitle
+    recentPostsDescription
+    recentPostsButtonText
+    recentPostsButtonLink
+    recentPostsCount
+  }
+  seo {
+    __typename
+    seoTitle
+    seoDescription
+  }
+  body
+}

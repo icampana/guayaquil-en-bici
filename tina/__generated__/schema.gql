@@ -64,6 +64,10 @@ type Query {
   videoConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: VideoFilter): VideoConnection!
   banner(relativePath: String): Banner!
   bannerConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: BannerFilter): BannerConnection!
+  feature(relativePath: String): Feature!
+  featureConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: FeatureFilter): FeatureConnection!
+  homepage(relativePath: String): Homepage!
+  homepageConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: HomepageFilter): HomepageConnection!
 }
 
 input DocumentFilter {
@@ -72,6 +76,8 @@ input DocumentFilter {
   service: ServiceFilter
   video: VideoFilter
   banner: BannerFilter
+  feature: FeatureFilter
+  homepage: HomepageFilter
 }
 
 type DocumentConnectionEdges {
@@ -97,7 +103,7 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = Blog | Page | Service | Video | Banner | Folder
+union DocumentNode = Blog | Page | Service | Video | Banner | Feature | Homepage | Folder
 
 type BlogSeo {
   title: String
@@ -326,6 +332,172 @@ type BannerConnection implements Connection {
   edges: [BannerConnectionEdges]
 }
 
+type Feature implements Node & Document {
+  title: String!
+  description: String!
+  icon: String!
+  order: Float!
+  active: Boolean
+  body: JSON
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input FeatureFilter {
+  title: StringFilter
+  description: StringFilter
+  icon: StringFilter
+  order: NumberFilter
+  active: BooleanFilter
+  body: RichTextFilter
+}
+
+type FeatureConnectionEdges {
+  cursor: String!
+  node: Feature
+}
+
+type FeatureConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [FeatureConnectionEdges]
+}
+
+type HomepageHero {
+  heroTitle: String!
+  heroDescription: String!
+  heroImage: String
+  heroOverlayOpacity: Float
+  heroButton1Text: String!
+  heroButton1Link: String!
+  heroButton2Text: String!
+  heroButton2Link: String!
+}
+
+type HomepageFeatures {
+  featuresEyebrow: String!
+  featuresTitle: String!
+  featuresDescription: String!
+  featuresButtonText: String!
+  featuresButtonLink: String!
+}
+
+type HomepageMainCta {
+  mainCtaEyebrow: String!
+  mainCtaTitle: String!
+  mainCtaDescription: String!
+  mainCtaButtonText: String!
+  mainCtaButtonLink: String!
+}
+
+type HomepageFooterCta {
+  footerCtaEyebrow: String!
+  footerCtaTitle: String!
+  footerCtaDescription: String!
+  footerCtaButtonText: String!
+  footerCtaButtonLink: String!
+}
+
+type HomepageRecentPosts {
+  recentPostsEyebrow: String!
+  recentPostsTitle: String!
+  recentPostsDescription: String!
+  recentPostsButtonText: String!
+  recentPostsButtonLink: String!
+  recentPostsCount: Float
+}
+
+type HomepageSeo {
+  seoTitle: String!
+  seoDescription: String!
+}
+
+type Homepage implements Node & Document {
+  title: String!
+  hero: HomepageHero
+  features: HomepageFeatures
+  mainCta: HomepageMainCta
+  footerCta: HomepageFooterCta
+  recentPosts: HomepageRecentPosts
+  seo: HomepageSeo
+  body: JSON
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input HomepageHeroFilter {
+  heroTitle: StringFilter
+  heroDescription: StringFilter
+  heroImage: ImageFilter
+  heroOverlayOpacity: NumberFilter
+  heroButton1Text: StringFilter
+  heroButton1Link: StringFilter
+  heroButton2Text: StringFilter
+  heroButton2Link: StringFilter
+}
+
+input HomepageFeaturesFilter {
+  featuresEyebrow: StringFilter
+  featuresTitle: StringFilter
+  featuresDescription: StringFilter
+  featuresButtonText: StringFilter
+  featuresButtonLink: StringFilter
+}
+
+input HomepageMainCtaFilter {
+  mainCtaEyebrow: StringFilter
+  mainCtaTitle: StringFilter
+  mainCtaDescription: StringFilter
+  mainCtaButtonText: StringFilter
+  mainCtaButtonLink: StringFilter
+}
+
+input HomepageFooterCtaFilter {
+  footerCtaEyebrow: StringFilter
+  footerCtaTitle: StringFilter
+  footerCtaDescription: StringFilter
+  footerCtaButtonText: StringFilter
+  footerCtaButtonLink: StringFilter
+}
+
+input HomepageRecentPostsFilter {
+  recentPostsEyebrow: StringFilter
+  recentPostsTitle: StringFilter
+  recentPostsDescription: StringFilter
+  recentPostsButtonText: StringFilter
+  recentPostsButtonLink: StringFilter
+  recentPostsCount: NumberFilter
+}
+
+input HomepageSeoFilter {
+  seoTitle: StringFilter
+  seoDescription: StringFilter
+}
+
+input HomepageFilter {
+  title: StringFilter
+  hero: HomepageHeroFilter
+  features: HomepageFeaturesFilter
+  mainCta: HomepageMainCtaFilter
+  footerCta: HomepageFooterCtaFilter
+  recentPosts: HomepageRecentPostsFilter
+  seo: HomepageSeoFilter
+  body: RichTextFilter
+}
+
+type HomepageConnectionEdges {
+  cursor: String!
+  node: Homepage
+}
+
+type HomepageConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [HomepageConnectionEdges]
+}
+
 type Mutation {
   addPendingDocument(collection: String!, relativePath: String!, template: String): DocumentNode!
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
@@ -342,6 +514,10 @@ type Mutation {
   createVideo(relativePath: String!, params: VideoMutation!): Video!
   updateBanner(relativePath: String!, params: BannerMutation!): Banner!
   createBanner(relativePath: String!, params: BannerMutation!): Banner!
+  updateFeature(relativePath: String!, params: FeatureMutation!): Feature!
+  createFeature(relativePath: String!, params: FeatureMutation!): Feature!
+  updateHomepage(relativePath: String!, params: HomepageMutation!): Homepage!
+  createHomepage(relativePath: String!, params: HomepageMutation!): Homepage!
 }
 
 input DocumentUpdateMutation {
@@ -350,6 +526,8 @@ input DocumentUpdateMutation {
   service: ServiceMutation
   video: VideoMutation
   banner: BannerMutation
+  feature: FeatureMutation
+  homepage: HomepageMutation
   relativePath: String
 }
 
@@ -359,6 +537,8 @@ input DocumentMutation {
   service: ServiceMutation
   video: VideoMutation
   banner: BannerMutation
+  feature: FeatureMutation
+  homepage: HomepageMutation
 }
 
 input BlogSeoMutation {
@@ -415,6 +595,75 @@ input BannerMutation {
   link: String
   order: Float
   active: Boolean
+  body: JSON
+}
+
+input FeatureMutation {
+  title: String
+  description: String
+  icon: String
+  order: Float
+  active: Boolean
+  body: JSON
+}
+
+input HomepageHeroMutation {
+  heroTitle: String
+  heroDescription: String
+  heroImage: String
+  heroOverlayOpacity: Float
+  heroButton1Text: String
+  heroButton1Link: String
+  heroButton2Text: String
+  heroButton2Link: String
+}
+
+input HomepageFeaturesMutation {
+  featuresEyebrow: String
+  featuresTitle: String
+  featuresDescription: String
+  featuresButtonText: String
+  featuresButtonLink: String
+}
+
+input HomepageMainCtaMutation {
+  mainCtaEyebrow: String
+  mainCtaTitle: String
+  mainCtaDescription: String
+  mainCtaButtonText: String
+  mainCtaButtonLink: String
+}
+
+input HomepageFooterCtaMutation {
+  footerCtaEyebrow: String
+  footerCtaTitle: String
+  footerCtaDescription: String
+  footerCtaButtonText: String
+  footerCtaButtonLink: String
+}
+
+input HomepageRecentPostsMutation {
+  recentPostsEyebrow: String
+  recentPostsTitle: String
+  recentPostsDescription: String
+  recentPostsButtonText: String
+  recentPostsButtonLink: String
+  recentPostsCount: Float
+}
+
+input HomepageSeoMutation {
+  seoTitle: String
+  seoDescription: String
+}
+
+input HomepageMutation {
+  title: String
+  hero: HomepageHeroMutation
+  features: HomepageFeaturesMutation
+  mainCta: HomepageMainCtaMutation
+  footerCta: HomepageFooterCtaMutation
+  recentPosts: HomepageRecentPostsMutation
+  seo: HomepageSeoMutation
   body: JSON
 }
 
