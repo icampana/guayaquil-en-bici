@@ -329,6 +329,366 @@ export default defineConfig({
           };
         },
       },
+      {
+        name: 'feature',
+        label: 'Características',
+        path: 'src/content/features',
+        format: 'md',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Título',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Descripción',
+            required: true,
+            ui: {
+              component: 'textarea',
+            },
+          },
+          {
+            type: 'string',
+            name: 'icon',
+            label: 'Icono',
+            required: true,
+            options: [
+              { value: 'users', label: 'Usuarios' },
+              { value: 'calendar', label: 'Calendario' },
+              { value: 'shield', label: 'Escudo' },
+              { value: 'book-open', label: 'Libro Abierto' },
+              { value: 'message-circle', label: 'Mensaje' },
+              { value: 'heart', label: 'Corazón' },
+              { value: 'bike', label: 'Bicicleta' },
+              { value: 'map', label: 'Mapa' },
+              { value: 'award', label: 'Premio' },
+              { value: 'target', label: 'Objetivo' },
+              { value: 'megaphone', label: 'Megáfono' },
+              { value: 'flag', label: 'Bandera' },
+              { value: 'trophy', label: 'Trofeo' },
+              { value: 'compass', label: 'Brújula' },
+              { value: 'trending-up', label: 'Tendencia Creciente' },
+              { value: 'user-plus', label: 'Agregar Usuario' },
+              { value: 'user-check', label: 'Usuario Verificado' },
+              { value: 'building', label: 'Edificio' },
+              { value: 'clipboard-list', label: 'Lista' },
+              { value: 'file-text', label: 'Documento' },
+            ],
+          },
+          {
+            type: 'number',
+            name: 'order',
+            label: 'Orden',
+            description: 'Orden de visualización (menor número aparece primero)',
+            required: true,
+          },
+          {
+            type: 'boolean',
+            name: 'active',
+            label: 'Activo',
+            description: 'Mostrar esta característica en el sitio',
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Contenido Adicional',
+            description: 'Contenido opcional adicional',
+            isBody: true,
+          },
+        ],
+        defaultItem: () => {
+          return {
+            title: 'Nueva Característica',
+            active: true,
+            order: 999,
+            icon: 'users',
+          };
+        },
+      },
+      {
+        name: 'homepage',
+        label: 'Página Principal',
+        path: 'src/content/homepage',
+        format: 'md',
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Título de la Página',
+            isTitle: true,
+            required: true,
+            description: 'Solo para referencia interna',
+          },
+          // Hero Section
+          {
+            type: 'object',
+            name: 'hero',
+            label: 'Sección Hero',
+            fields: [
+              {
+                type: 'string',
+                name: 'heroTitle',
+                label: 'Título',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'heroDescription',
+                label: 'Descripción',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+              {
+                type: 'image',
+                name: 'heroImage',
+                label: 'Imagen de Fondo',
+              },
+              {
+                type: 'number',
+                name: 'heroOverlayOpacity',
+                label: 'Opacidad de Superposición',
+                description: 'Valor entre 0 y 1 (ej: 0.3)',
+              },
+              {
+                type: 'string',
+                name: 'heroButton1Text',
+                label: 'Texto del Botón 1',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'heroButton1Link',
+                label: 'Enlace del Botón 1',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'heroButton2Text',
+                label: 'Texto del Botón 2',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'heroButton2Link',
+                label: 'Enlace del Botón 2',
+                required: true,
+              },
+            ],
+          },
+          // Features Section
+          {
+            type: 'object',
+            name: 'features',
+            label: 'Sección de Características',
+            fields: [
+              {
+                type: 'string',
+                name: 'featuresEyebrow',
+                label: 'Subtítulo Superior',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'featuresTitle',
+                label: 'Título',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'featuresDescription',
+                label: 'Descripción',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+              {
+                type: 'string',
+                name: 'featuresButtonText',
+                label: 'Texto del Botón',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'featuresButtonLink',
+                label: 'Enlace del Botón',
+                required: true,
+              },
+            ],
+          },
+          // Main CTA Section
+          {
+            type: 'object',
+            name: 'mainCta',
+            label: 'Llamada a la Acción Principal',
+            fields: [
+              {
+                type: 'string',
+                name: 'mainCtaEyebrow',
+                label: 'Subtítulo Superior',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'mainCtaTitle',
+                label: 'Título',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'mainCtaDescription',
+                label: 'Descripción',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+              {
+                type: 'string',
+                name: 'mainCtaButtonText',
+                label: 'Texto del Botón',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'mainCtaButtonLink',
+                label: 'Enlace del Botón',
+                required: true,
+              },
+            ],
+          },
+          // Footer CTA Section
+          {
+            type: 'object',
+            name: 'footerCta',
+            label: 'Llamada a la Acción del Footer',
+            fields: [
+              {
+                type: 'string',
+                name: 'footerCtaEyebrow',
+                label: 'Subtítulo Superior',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'footerCtaTitle',
+                label: 'Título',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'footerCtaDescription',
+                label: 'Descripción',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+              {
+                type: 'string',
+                name: 'footerCtaButtonText',
+                label: 'Texto del Botón',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'footerCtaButtonLink',
+                label: 'Enlace del Botón',
+                required: true,
+              },
+            ],
+          },
+          // Recent Posts Section
+          {
+            type: 'object',
+            name: 'recentPosts',
+            label: 'Sección de Publicaciones Recientes',
+            fields: [
+              {
+                type: 'string',
+                name: 'recentPostsEyebrow',
+                label: 'Subtítulo Superior',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'recentPostsTitle',
+                label: 'Título',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'recentPostsDescription',
+                label: 'Descripción',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+              {
+                type: 'string',
+                name: 'recentPostsButtonText',
+                label: 'Texto del Botón',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'recentPostsButtonLink',
+                label: 'Enlace del Botón',
+                required: true,
+              },
+              {
+                type: 'number',
+                name: 'recentPostsCount',
+                label: 'Número de Publicaciones a Mostrar',
+                description: 'Cantidad de posts recientes a mostrar',
+              },
+            ],
+          },
+          // SEO
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'SEO',
+            fields: [
+              {
+                type: 'string',
+                name: 'seoTitle',
+                label: 'Título SEO',
+                required: true,
+              },
+              {
+                type: 'string',
+                name: 'seoDescription',
+                label: 'Descripción SEO',
+                required: true,
+                ui: {
+                  component: 'textarea',
+                },
+              },
+            ],
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Notas',
+            description: 'Notas internas (no se muestran en el sitio)',
+            isBody: true,
+          },
+        ],
+      },
     ],
   },
 });

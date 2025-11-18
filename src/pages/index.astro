@@ -2,84 +2,110 @@
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sections/Hero.astro';
 import Features from '@components/sections/Features.astro';
-import { featureLists } from '@data/features';
 import CtaBanner from '@components/sections/CtaBanner.astro';
 import RecentPosts from '@components/sections/RecentPosts.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { getIcon } from '@utils/iconMap';
 import heroImage from '../assets/images/home/default-hero-geb.png';
 
-const seoTitle = "Guayaquil en Bici - Movilidad Sostenible";
-const seoDescription = "Colectivo ciudadano que promueve el uso de la bicicleta como medio de transporte sostenible en Guayaquil, Ecuador.";
+// Fetch homepage configuration
+const homepageData = await getEntry('homepage', 'index');
+if (!homepageData) {
+    throw new Error('Homepage configuration not found');
+}
 
+const { hero, features, mainCta, footerCta, recentPosts, seo } = homepageData.data;
+
+// Fetch all features and filter active ones, sorted by order
+const allFeatures = await getCollection('feature');
+const activeFeatures = allFeatures
+    .filter(feature => feature.data.active)
+    .sort((a, b) => a.data.order - b.data.order)
+    .map(feature => ({
+        icon: getIcon(feature.data.icon),
+        title: feature.data.title,
+        description: feature.data.description,
+    }));
+
+// SEO configuration
+const seoTitle = seo.seoTitle;
+const seoDescription = seo.seoDescription;
+
+// Hero section configuration
 const heroContent = {
-    title: 'Pedaleando Hacia una Ciudad Más Sostenible',
-    description: 'Somos un colectivo ciudadano dedicado a promover el ciclismo urbano como medio de transporte sostenible, seguro y accesible en Guayaquil. Únete a nosotros para construir una ciudad más amigable con las bicicletas.',
+    title: hero.heroTitle,
+    description: hero.heroDescription,
     buttons: [
         {
-            text: 'Conócenos',
-            link: '/que-hacemos',
+            text: hero.heroButton1Text,
+            link: hero.heroButton1Link,
             target: '_self'
         },
         {
-            text: 'Contáctanos',
-            link: '/contactanos',
+            text: hero.heroButton2Text,
+            link: hero.heroButton2Link,
             target: '_self'
         }
     ],
-    backgroundImage: heroImage,
-    overlayOpacity: 0.3
-}
+    backgroundImage: hero.heroImage || heroImage,
+    overlayOpacity: hero.heroOverlayOpacity
+};
 
+// Features section configuration
 const featuresSection = {
-    eyebrow: "¿QUÉ HACEMOS?",
-    title: "Promoviendo el Ciclismo Urbano en Guayaquil",
-    description: "Trabajamos en múltiples frentes para hacer de Guayaquil una ciudad más amigable con las bicicletas, promoviendo la movilidad sostenible y el derecho a circular en condiciones dignas y seguras.",
-    features: featureLists.main.features,
+    eyebrow: features.featuresEyebrow,
+    title: features.featuresTitle,
+    description: features.featuresDescription,
+    features: activeFeatures,
     button: {
-        text: "Conoce Más Sobre Nosotros",
-        link: "/que-hacemos",
+        text: features.featuresButtonText,
+        link: features.featuresButtonLink,
         variant: "primary" as const
     }
-}
+};
 
+// Footer CTA configuration
 const FooterCta = {
-    eyebrow: "Únete al Movimiento",
-    title: 'Sé Parte del Cambio en Guayaquil',
-    description: 'Todos somos bienvenidos en Guayaquil en Bici. Únete a nuestras actividades, comparte tus experiencias y ayúdanos a construir una ciudad más sostenible para todos.',
+    eyebrow: footerCta.footerCtaEyebrow,
+    title: footerCta.footerCtaTitle,
+    description: footerCta.footerCtaDescription,
     hideCta: false,
     button: {
-        text: 'Contáctanos',
-        link: '/contactanos',
+        text: footerCta.footerCtaButtonText,
+        link: footerCta.footerCtaButtonLink,
         target: '_self'
     }
-}
+};
 
-const mainCta = {
-    eyebrow: "Nuestras Actividades",
-    title: "Participa en Nuestros Eventos",
-    description: "Únete a la Masa Crítica, el Día Mundial Sin Auto, Alleycat y más eventos que organizamos para promover el ciclismo urbano en Guayaquil. ¡Todos son bienvenidos!",
+// Main CTA configuration
+const mainCtaConfig = {
+    eyebrow: mainCta.mainCtaEyebrow,
+    title: mainCta.mainCtaTitle,
+    description: mainCta.mainCtaDescription,
     button: {
-        text: "Ver Actividades",
-        link: "/masa-critica",
+        text: mainCta.mainCtaButtonText,
+        link: mainCta.mainCtaButtonLink,
         variant: "primary" as const,
         target: "_self" as const
     }
 };
 
+// Recent posts section configuration
 const recentPostsSection = {
-    eyebrow: "ÚLTIMAS NOTICIAS",
-    title: "Lo Más Reciente del Ciclismo Urbano",
-    description: "Mantente informado sobre las últimas noticias, eventos y actividades relacionadas con el ciclismo urbano en Guayaquil y más allá.",
+    eyebrow: recentPosts.recentPostsEyebrow,
+    title: recentPosts.recentPostsTitle,
+    description: recentPosts.recentPostsDescription,
     button: {
-            text: "Ver Todas las Publicaciones",
-            link: "/blog",
+        text: recentPosts.recentPostsButtonText,
+        link: recentPosts.recentPostsButtonLink,
         variant: "primary" as const
     }
-}
+};
 ---
 
 <Layout footerCta={FooterCta} title={seoTitle} description={seoDescription}>
     <Hero content={heroContent} />
-    <RecentPosts content={recentPostsSection} background="base" padding="base" postsToShow={6} />
+    <RecentPosts content={recentPostsSection} background="base" padding="base" postsToShow={recentPosts.recentPostsCount} />
     <Features content={featuresSection} padding="base" background="light" />
-    <CtaBanner content={mainCta} variant="contained" background="light" paddingBottom="base" />
+    <CtaBanner content={mainCtaConfig} variant="contained" background="light" paddingBottom="base" />
 </Layout>
