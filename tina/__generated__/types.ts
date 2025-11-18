@@ -92,6 +92,10 @@ export type Query = {
   videoConnection: VideoConnection;
   banner: Banner;
   bannerConnection: BannerConnection;
+  feature: Feature;
+  featureConnection: FeatureConnection;
+  homepage: Homepage;
+  homepageConnection: HomepageConnection;
 };
 
 
@@ -190,12 +194,44 @@ export type QueryBannerConnectionArgs = {
   filter?: InputMaybe<BannerFilter>;
 };
 
+
+export type QueryFeatureArgs = {
+  relativePath?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryFeatureConnectionArgs = {
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<FeatureFilter>;
+};
+
+
+export type QueryHomepageArgs = {
+  relativePath?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryHomepageConnectionArgs = {
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<HomepageFilter>;
+};
+
 export type DocumentFilter = {
   blog?: InputMaybe<BlogFilter>;
   page?: InputMaybe<PageFilter>;
   service?: InputMaybe<ServiceFilter>;
   video?: InputMaybe<VideoFilter>;
   banner?: InputMaybe<BannerFilter>;
+  feature?: InputMaybe<FeatureFilter>;
+  homepage?: InputMaybe<HomepageFilter>;
 };
 
 export type DocumentConnectionEdges = {
@@ -235,7 +271,7 @@ export type CollectionDocumentsArgs = {
   folder?: InputMaybe<Scalars['String']['input']>;
 };
 
-export type DocumentNode = Blog | Page | Service | Video | Banner | Folder;
+export type DocumentNode = Blog | Page | Service | Video | Banner | Feature | Homepage | Folder;
 
 export type BlogSeo = {
   __typename?: 'BlogSeo';
@@ -481,6 +517,184 @@ export type BannerConnection = Connection & {
   edges?: Maybe<Array<Maybe<BannerConnectionEdges>>>;
 };
 
+export type Feature = Node & Document & {
+  __typename?: 'Feature';
+  title: Scalars['String']['output'];
+  description: Scalars['String']['output'];
+  icon: Scalars['String']['output'];
+  order: Scalars['Float']['output'];
+  active?: Maybe<Scalars['Boolean']['output']>;
+  body?: Maybe<Scalars['JSON']['output']>;
+  id: Scalars['ID']['output'];
+  _sys: SystemInfo;
+  _values: Scalars['JSON']['output'];
+};
+
+export type FeatureFilter = {
+  title?: InputMaybe<StringFilter>;
+  description?: InputMaybe<StringFilter>;
+  icon?: InputMaybe<StringFilter>;
+  order?: InputMaybe<NumberFilter>;
+  active?: InputMaybe<BooleanFilter>;
+  body?: InputMaybe<RichTextFilter>;
+};
+
+export type FeatureConnectionEdges = {
+  __typename?: 'FeatureConnectionEdges';
+  cursor: Scalars['String']['output'];
+  node?: Maybe<Feature>;
+};
+
+export type FeatureConnection = Connection & {
+  __typename?: 'FeatureConnection';
+  pageInfo: PageInfo;
+  totalCount: Scalars['Float']['output'];
+  edges?: Maybe<Array<Maybe<FeatureConnectionEdges>>>;
+};
+
+export type HomepageHero = {
+  __typename?: 'HomepageHero';
+  heroTitle: Scalars['String']['output'];
+  heroDescription: Scalars['String']['output'];
+  heroImage?: Maybe<Scalars['String']['output']>;
+  heroOverlayOpacity?: Maybe<Scalars['Float']['output']>;
+  heroButton1Text: Scalars['String']['output'];
+  heroButton1Link: Scalars['String']['output'];
+  heroButton2Text: Scalars['String']['output'];
+  heroButton2Link: Scalars['String']['output'];
+};
+
+export type HomepageFeatures = {
+  __typename?: 'HomepageFeatures';
+  featuresEyebrow: Scalars['String']['output'];
+  featuresTitle: Scalars['String']['output'];
+  featuresDescription: Scalars['String']['output'];
+  featuresButtonText: Scalars['String']['output'];
+  featuresButtonLink: Scalars['String']['output'];
+};
+
+export type HomepageMainCta = {
+  __typename?: 'HomepageMainCta';
+  mainCtaEyebrow: Scalars['String']['output'];
+  mainCtaTitle: Scalars['String']['output'];
+  mainCtaDescription: Scalars['String']['output'];
+  mainCtaButtonText: Scalars['String']['output'];
+  mainCtaButtonLink: Scalars['String']['output'];
+};
+
+export type HomepageFooterCta = {
+  __typename?: 'HomepageFooterCta';
+  footerCtaEyebrow: Scalars['String']['output'];
+  footerCtaTitle: Scalars['String']['output'];
+  footerCtaDescription: Scalars['String']['output'];
+  footerCtaButtonText: Scalars['String']['output'];
+  footerCtaButtonLink: Scalars['String']['output'];
+};
+
+export type HomepageRecentPosts = {
+  __typename?: 'HomepageRecentPosts';
+  recentPostsEyebrow: Scalars['String']['output'];
+  recentPostsTitle: Scalars['String']['output'];
+  recentPostsDescription: Scalars['String']['output'];
+  recentPostsButtonText: Scalars['String']['output'];
+  recentPostsButtonLink: Scalars['String']['output'];
+  recentPostsCount?: Maybe<Scalars['Float']['output']>;
+};
+
+export type HomepageSeo = {
+  __typename?: 'HomepageSeo';
+  seoTitle: Scalars['String']['output'];
+  seoDescription: Scalars['String']['output'];
+};
+
+export type Homepage = Node & Document & {
+  __typename?: 'Homepage';
+  title: Scalars['String']['output'];
+  hero?: Maybe<HomepageHero>;
+  features?: Maybe<HomepageFeatures>;
+  mainCta?: Maybe<HomepageMainCta>;
+  footerCta?: Maybe<HomepageFooterCta>;
+  recentPosts?: Maybe<HomepageRecentPosts>;
+  seo?: Maybe<HomepageSeo>;
+  body?: Maybe<Scalars['JSON']['output']>;
+  id: Scalars['ID']['output'];
+  _sys: SystemInfo;
+  _values: Scalars['JSON']['output'];
+};
+
+export type HomepageHeroFilter = {
+  heroTitle?: InputMaybe<StringFilter>;
+  heroDescription?: InputMaybe<StringFilter>;
+  heroImage?: InputMaybe<ImageFilter>;
+  heroOverlayOpacity?: InputMaybe<NumberFilter>;
+  heroButton1Text?: InputMaybe<StringFilter>;
+  heroButton1Link?: InputMaybe<StringFilter>;
+  heroButton2Text?: InputMaybe<StringFilter>;
+  heroButton2Link?: InputMaybe<StringFilter>;
+};
+
+export type HomepageFeaturesFilter = {
+  featuresEyebrow?: InputMaybe<StringFilter>;
+  featuresTitle?: InputMaybe<StringFilter>;
+  featuresDescription?: InputMaybe<StringFilter>;
+  featuresButtonText?: InputMaybe<StringFilter>;
+  featuresButtonLink?: InputMaybe<StringFilter>;
+};
+
+export type HomepageMainCtaFilter = {
+  mainCtaEyebrow?: InputMaybe<StringFilter>;
+  mainCtaTitle?: InputMaybe<StringFilter>;
+  mainCtaDescription?: InputMaybe<StringFilter>;
+  mainCtaButtonText?: InputMaybe<StringFilter>;
+  mainCtaButtonLink?: InputMaybe<StringFilter>;
+};
+
+export type HomepageFooterCtaFilter = {
+  footerCtaEyebrow?: InputMaybe<StringFilter>;
+  footerCtaTitle?: InputMaybe<StringFilter>;
+  footerCtaDescription?: InputMaybe<StringFilter>;
+  footerCtaButtonText?: InputMaybe<StringFilter>;
+  footerCtaButtonLink?: InputMaybe<StringFilter>;
+};
+
+export type HomepageRecentPostsFilter = {
+  recentPostsEyebrow?: InputMaybe<StringFilter>;
+  recentPostsTitle?: InputMaybe<StringFilter>;
+  recentPostsDescription?: InputMaybe<StringFilter>;
+  recentPostsButtonText?: InputMaybe<StringFilter>;
+  recentPostsButtonLink?: InputMaybe<StringFilter>;
+  recentPostsCount?: InputMaybe<NumberFilter>;
+};
+
+export type HomepageSeoFilter = {
+  seoTitle?: InputMaybe<StringFilter>;
+  seoDescription?: InputMaybe<StringFilter>;
+};
+
+export type HomepageFilter = {
+  title?: InputMaybe<StringFilter>;
+  hero?: InputMaybe<HomepageHeroFilter>;
+  features?: InputMaybe<HomepageFeaturesFilter>;
+  mainCta?: InputMaybe<HomepageMainCtaFilter>;
+  footerCta?: InputMaybe<HomepageFooterCtaFilter>;
+  recentPosts?: InputMaybe<HomepageRecentPostsFilter>;
+  seo?: InputMaybe<HomepageSeoFilter>;
+  body?: InputMaybe<RichTextFilter>;
+};
+
+export type HomepageConnectionEdges = {
+  __typename?: 'HomepageConnectionEdges';
+  cursor: Scalars['String']['output'];
+  node?: Maybe<Homepage>;
+};
+
+export type HomepageConnection = Connection & {
+  __typename?: 'HomepageConnection';
+  pageInfo: PageInfo;
+  totalCount: Scalars['Float']['output'];
+  edges?: Maybe<Array<Maybe<HomepageConnectionEdges>>>;
+};
+
 export type Mutation = {
   __typename?: 'Mutation';
   addPendingDocument: DocumentNode;
@@ -498,6 +712,10 @@ export type Mutation = {
   createVideo: Video;
   updateBanner: Banner;
   createBanner: Banner;
+  updateFeature: Feature;
+  createFeature: Feature;
+  updateHomepage: Homepage;
+  createHomepage: Homepage;
 };
 
 
@@ -593,12 +811,38 @@ export type MutationCreateBannerArgs = {
   params: BannerMutation;
 };
 
+
+export type MutationUpdateFeatureArgs = {
+  relativePath: Scalars['String']['input'];
+  params: FeatureMutation;
+};
+
+
+export type MutationCreateFeatureArgs = {
+  relativePath: Scalars['String']['input'];
+  params: FeatureMutation;
+};
+
+
+export type MutationUpdateHomepageArgs = {
+  relativePath: Scalars['String']['input'];
+  params: HomepageMutation;
+};
+
+
+export type MutationCreateHomepageArgs = {
+  relativePath: Scalars['String']['input'];
+  params: HomepageMutation;
+};
+
 export type DocumentUpdateMutation = {
   blog?: InputMaybe<BlogMutation>;
   page?: InputMaybe<PageMutation>;
   service?: InputMaybe<ServiceMutation>;
   video?: InputMaybe<VideoMutation>;
   banner?: InputMaybe<BannerMutation>;
+  feature?: InputMaybe<FeatureMutation>;
+  homepage?: InputMaybe<HomepageMutation>;
   relativePath?: InputMaybe<Scalars['String']['input']>;
 };
 
@@ -608,6 +852,8 @@ export type DocumentMutation = {
   service?: InputMaybe<ServiceMutation>;
   video?: InputMaybe<VideoMutation>;
   banner?: InputMaybe<BannerMutation>;
+  feature?: InputMaybe<FeatureMutation>;
+  homepage?: InputMaybe<HomepageMutation>;
 };
 
 export type BlogSeoMutation = {
@@ -667,6 +913,75 @@ export type BannerMutation = {
   body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
+export type FeatureMutation = {
+  title?: InputMaybe<Scalars['String']['input']>;
+  description?: InputMaybe<Scalars['String']['input']>;
+  icon?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Scalars['Float']['input']>;
+  active?: InputMaybe<Scalars['Boolean']['input']>;
+  body?: InputMaybe<Scalars['JSON']['input']>;
+};
+
+export type HomepageHeroMutation = {
+  heroTitle?: InputMaybe<Scalars['String']['input']>;
+  heroDescription?: InputMaybe<Scalars['String']['input']>;
+  heroImage?: InputMaybe<Scalars['String']['input']>;
+  heroOverlayOpacity?: InputMaybe<Scalars['Float']['input']>;
+  heroButton1Text?: InputMaybe<Scalars['String']['input']>;
+  heroButton1Link?: InputMaybe<Scalars['String']['input']>;
+  heroButton2Text?: InputMaybe<Scalars['String']['input']>;
+  heroButton2Link?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type HomepageFeaturesMutation = {
+  featuresEyebrow?: InputMaybe<Scalars['String']['input']>;
+  featuresTitle?: InputMaybe<Scalars['String']['input']>;
+  featuresDescription?: InputMaybe<Scalars['String']['input']>;
+  featuresButtonText?: InputMaybe<Scalars['String']['input']>;
+  featuresButtonLink?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type HomepageMainCtaMutation = {
+  mainCtaEyebrow?: InputMaybe<Scalars['String']['input']>;
+  mainCtaTitle?: InputMaybe<Scalars['String']['input']>;
+  mainCtaDescription?: InputMaybe<Scalars['String']['input']>;
+  mainCtaButtonText?: InputMaybe<Scalars['String']['input']>;
+  mainCtaButtonLink?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type HomepageFooterCtaMutation = {
+  footerCtaEyebrow?: InputMaybe<Scalars['String']['input']>;
+  footerCtaTitle?: InputMaybe<Scalars['String']['input']>;
+  footerCtaDescription?: InputMaybe<Scalars['String']['input']>;
+  footerCtaButtonText?: InputMaybe<Scalars['String']['input']>;
+  footerCtaButtonLink?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type HomepageRecentPostsMutation = {
+  recentPostsEyebrow?: InputMaybe<Scalars['String']['input']>;
+  recentPostsTitle?: InputMaybe<Scalars['String']['input']>;
+  recentPostsDescription?: InputMaybe<Scalars['String']['input']>;
+  recentPostsButtonText?: InputMaybe<Scalars['String']['input']>;
+  recentPostsButtonLink?: InputMaybe<Scalars['String']['input']>;
+  recentPostsCount?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type HomepageSeoMutation = {
+  seoTitle?: InputMaybe<Scalars['String']['input']>;
+  seoDescription?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type HomepageMutation = {
+  title?: InputMaybe<Scalars['String']['input']>;
+  hero?: InputMaybe<HomepageHeroMutation>;
+  features?: InputMaybe<HomepageFeaturesMutation>;
+  mainCta?: InputMaybe<HomepageMainCtaMutation>;
+  footerCta?: InputMaybe<HomepageFooterCtaMutation>;
+  recentPosts?: InputMaybe<HomepageRecentPostsMutation>;
+  seo?: InputMaybe<HomepageSeoMutation>;
+  body?: InputMaybe<Scalars['JSON']['input']>;
+};
+
 export type BlogPartsFragment = { __typename: 'Blog', title: string, excerpt: string, featuredImage?: string | null, publishDate: string, publish?: boolean | null, categories?: Array<string | null> | null, tags?: Array<string | null> | null, body?: any | null, seo?: { __typename: 'BlogSeo', title?: string | null, description?: string | null, image?: string | null } | null };
 
 export type PagePartsFragment = { __typename: 'Page', title: string, excerpt?: string | null, publish?: boolean | null, body?: any | null, seo?: { __typename: 'PageSeo', title?: string | null, description?: string | null } | null };
@@ -676,6 +991,10 @@ export type ServicePartsFragment = { __typename: 'Service', title: string, excer
 export type VideoPartsFragment = { __typename: 'Video', title: string, videoUrl: string, category?: string | null, thumbnail?: string | null, body?: any | null };
 
 export type BannerPartsFragment = { __typename: 'Banner', title: string, image: string, link?: string | null, order?: number | null, active?: boolean | null, body?: any | null };
+
+export type FeaturePartsFragment = { __typename: 'Feature', title: string, description: string, icon: string, order: number, active?: boolean | null, body?: any | null };
+
+export type HomepagePartsFragment = { __typename: 'Homepage', title: string, body?: any | null, hero?: { __typename: 'HomepageHero', heroTitle: string, heroDescription: string, heroImage?: string | null, heroOverlayOpacity?: number | null, heroButton1Text: string, heroButton1Link: string, heroButton2Text: string, heroButton2Link: string } | null, features?: { __typename: 'HomepageFeatures', featuresEyebrow: string, featuresTitle: string, featuresDescription: string, featuresButtonText: string, featuresButtonLink: string } | null, mainCta?: { __typename: 'HomepageMainCta', mainCtaEyebrow: string, mainCtaTitle: string, mainCtaDescription: string, mainCtaButtonText: string, mainCtaButtonLink: string } | null, footerCta?: { __typename: 'HomepageFooterCta', footerCtaEyebrow: string, footerCtaTitle: string, footerCtaDescription: string, footerCtaButtonText: string, footerCtaButtonLink: string } | null, recentPosts?: { __typename: 'HomepageRecentPosts', recentPostsEyebrow: string, recentPostsTitle: string, recentPostsDescription: string, recentPostsButtonText: string, recentPostsButtonLink: string, recentPostsCount?: number | null } | null, seo?: { __typename: 'HomepageSeo', seoTitle: string, seoDescription: string } | null };
 
 export type BlogQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -772,6 +1091,44 @@ export type BannerConnectionQueryVariables = Exact<{
 
 export type BannerConnectionQuery = { __typename?: 'Query', bannerConnection: { __typename?: 'BannerConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'BannerConnectionEdges', cursor: string, node?: { __typename: 'Banner', id: string, title: string, image: string, link?: string | null, order?: number | null, active?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
+export type FeatureQueryVariables = Exact<{
+  relativePath: Scalars['String']['input'];
+}>;
+
+
+export type FeatureQuery = { __typename?: 'Query', feature: { __typename: 'Feature', id: string, title: string, description: string, icon: string, order: number, active?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+
+export type FeatureConnectionQueryVariables = Exact<{
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<FeatureFilter>;
+}>;
+
+
+export type FeatureConnectionQuery = { __typename?: 'Query', featureConnection: { __typename?: 'FeatureConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'FeatureConnectionEdges', cursor: string, node?: { __typename: 'Feature', id: string, title: string, description: string, icon: string, order: number, active?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+
+export type HomepageQueryVariables = Exact<{
+  relativePath: Scalars['String']['input'];
+}>;
+
+
+export type HomepageQuery = { __typename?: 'Query', homepage: { __typename: 'Homepage', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, hero?: { __typename: 'HomepageHero', heroTitle: string, heroDescription: string, heroImage?: string | null, heroOverlayOpacity?: number | null, heroButton1Text: string, heroButton1Link: string, heroButton2Text: string, heroButton2Link: string } | null, features?: { __typename: 'HomepageFeatures', featuresEyebrow: string, featuresTitle: string, featuresDescription: string, featuresButtonText: string, featuresButtonLink: string } | null, mainCta?: { __typename: 'HomepageMainCta', mainCtaEyebrow: string, mainCtaTitle: string, mainCtaDescription: string, mainCtaButtonText: string, mainCtaButtonLink: string } | null, footerCta?: { __typename: 'HomepageFooterCta', footerCtaEyebrow: string, footerCtaTitle: string, footerCtaDescription: string, footerCtaButtonText: string, footerCtaButtonLink: string } | null, recentPosts?: { __typename: 'HomepageRecentPosts', recentPostsEyebrow: string, recentPostsTitle: string, recentPostsDescription: string, recentPostsButtonText: string, recentPostsButtonLink: string, recentPostsCount?: number | null } | null, seo?: { __typename: 'HomepageSeo', seoTitle: string, seoDescription: string } | null } };
+
+export type HomepageConnectionQueryVariables = Exact<{
+  before?: InputMaybe<Scalars['String']['input']>;
+  after?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Float']['input']>;
+  last?: InputMaybe<Scalars['Float']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  filter?: InputMaybe<HomepageFilter>;
+}>;
+
+
+export type HomepageConnectionQuery = { __typename?: 'Query', homepageConnection: { __typename?: 'HomepageConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'HomepageConnectionEdges', cursor: string, node?: { __typename: 'Homepage', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, hero?: { __typename: 'HomepageHero', heroTitle: string, heroDescription: string, heroImage?: string | null, heroOverlayOpacity?: number | null, heroButton1Text: string, heroButton1Link: string, heroButton2Text: string, heroButton2Link: string } | null, features?: { __typename: 'HomepageFeatures', featuresEyebrow: string, featuresTitle: string, featuresDescription: string, featuresButtonText: string, featuresButtonLink: string } | null, mainCta?: { __typename: 'HomepageMainCta', mainCtaEyebrow: string, mainCtaTitle: string, mainCtaDescription: string, mainCtaButtonText: string, mainCtaButtonLink: string } | null, footerCta?: { __typename: 'HomepageFooterCta', footerCtaEyebrow: string, footerCtaTitle: string, footerCtaDescription: string, footerCtaButtonText: string, footerCtaButtonLink: string } | null, recentPosts?: { __typename: 'HomepageRecentPosts', recentPostsEyebrow: string, recentPostsTitle: string, recentPostsDescription: string, recentPostsButtonText: string, recentPostsButtonLink: string, recentPostsCount?: number | null } | null, seo?: { __typename: 'HomepageSeo', seoTitle: string, seoDescription: string } | null } | null } | null> | null } };
+
 export const BlogPartsFragmentDoc = gql`
     fragment BlogParts on Blog {
   __typename
@@ -834,6 +1191,73 @@ export const BannerPartsFragmentDoc = gql`
   link
   order
   active
+  body
+}
+    `;
+export const FeaturePartsFragmentDoc = gql`
+    fragment FeatureParts on Feature {
+  __typename
+  title
+  description
+  icon
+  order
+  active
+  body
+}
+    `;
+export const HomepagePartsFragmentDoc = gql`
+    fragment HomepageParts on Homepage {
+  __typename
+  title
+  hero {
+    __typename
+    heroTitle
+    heroDescription
+    heroImage
+    heroOverlayOpacity
+    heroButton1Text
+    heroButton1Link
+    heroButton2Text
+    heroButton2Link
+  }
+  features {
+    __typename
+    featuresEyebrow
+    featuresTitle
+    featuresDescription
+    featuresButtonText
+    featuresButtonLink
+  }
+  mainCta {
+    __typename
+    mainCtaEyebrow
+    mainCtaTitle
+    mainCtaDescription
+    mainCtaButtonText
+    mainCtaButtonLink
+  }
+  footerCta {
+    __typename
+    footerCtaEyebrow
+    footerCtaTitle
+    footerCtaDescription
+    footerCtaButtonText
+    footerCtaButtonLink
+  }
+  recentPosts {
+    __typename
+    recentPostsEyebrow
+    recentPostsTitle
+    recentPostsDescription
+    recentPostsButtonText
+    recentPostsButtonLink
+    recentPostsCount
+  }
+  seo {
+    __typename
+    seoTitle
+    seoDescription
+  }
   body
 }
     `;
@@ -1122,6 +1546,120 @@ export const BannerConnectionDocument = gql`
   }
 }
     ${BannerPartsFragmentDoc}`;
+export const FeatureDocument = gql`
+    query feature($relativePath: String!) {
+  feature(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...FeatureParts
+  }
+}
+    ${FeaturePartsFragmentDoc}`;
+export const FeatureConnectionDocument = gql`
+    query featureConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: FeatureFilter) {
+  featureConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...FeatureParts
+      }
+    }
+  }
+}
+    ${FeaturePartsFragmentDoc}`;
+export const HomepageDocument = gql`
+    query homepage($relativePath: String!) {
+  homepage(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...HomepageParts
+  }
+}
+    ${HomepagePartsFragmentDoc}`;
+export const HomepageConnectionDocument = gql`
+    query homepageConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: HomepageFilter) {
+  homepageConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...HomepageParts
+      }
+    }
+  }
+}
+    ${HomepagePartsFragmentDoc}`;
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
@@ -1154,6 +1692,18 @@ export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) 
       },
     bannerConnection(variables?: BannerConnectionQueryVariables, options?: C): Promise<{data: BannerConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: BannerConnectionQueryVariables, query: string}> {
         return requester<{data: BannerConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: BannerConnectionQueryVariables, query: string}, BannerConnectionQueryVariables>(BannerConnectionDocument, variables, options);
+      },
+    feature(variables: FeatureQueryVariables, options?: C): Promise<{data: FeatureQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: FeatureQueryVariables, query: string}> {
+        return requester<{data: FeatureQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: FeatureQueryVariables, query: string}, FeatureQueryVariables>(FeatureDocument, variables, options);
+      },
+    featureConnection(variables?: FeatureConnectionQueryVariables, options?: C): Promise<{data: FeatureConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: FeatureConnectionQueryVariables, query: string}> {
+        return requester<{data: FeatureConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: FeatureConnectionQueryVariables, query: string}, FeatureConnectionQueryVariables>(FeatureConnectionDocument, variables, options);
+      },
+    homepage(variables: HomepageQueryVariables, options?: C): Promise<{data: HomepageQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: HomepageQueryVariables, query: string}> {
+        return requester<{data: HomepageQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: HomepageQueryVariables, query: string}, HomepageQueryVariables>(HomepageDocument, variables, options);
+      },
+    homepageConnection(variables?: HomepageConnectionQueryVariables, options?: C): Promise<{data: HomepageConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: HomepageConnectionQueryVariables, query: string}> {
+        return requester<{data: HomepageConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: HomepageConnectionQueryVariables, query: string}, HomepageConnectionQueryVariables>(HomepageConnectionDocument, variables, options);
       }
     };
   }
